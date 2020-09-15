@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.mt-slider_caption h2 {
+    margin: 0 0 20px;
+}
+.mt-col_content h2 {
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 24px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+aside h4.mt-widget_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.mt-section_header .mt-section_title {
+    font-size: 30px;
+    line-height: 24px;
+    color: #1d2230;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1d2230;
+    margin: 0;
+}
+
+.mt-news_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .mt-news_title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    .mt-section_header .mt-section_title {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .mt-col_content h2 {
+        font-size: 26px;
+    }
+}  

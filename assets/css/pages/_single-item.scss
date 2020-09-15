@@ -1,0 +1,252 @@
+.mt-item-banner_section{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    &:before, &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 300px;
+        transform: skew(-20deg);
+        z-index: 2;
+        pointer-events: none;
+
+    }
+    &:before{
+        content: '';
+        background: #1f3a93;
+        left: -306px;
+        border-right: solid 5px #fff;
+
+    }
+    &:after{
+        content: '';
+        background: #1d2230;
+        right: -300px;
+        border-left: solid 5px #fff;
+    }
+    .mt-item_thumb{
+        
+    position: absolute;
+    width: 160%;
+    left: -30%;
+    right: -30%;
+    height: 100%;
+    transform: skew(20deg);
+    -o-object-fit: cover;
+    object-fit: cover;
+    img{
+        min-width: 100%;
+    }
+    }
+}
+.mt-item-info{
+    &__details{
+        .mt-section_header{
+            margin: 0;
+            h2{
+                color:$blue;
+                font-weight: bold;
+            }
+        }
+        &--img{
+        }
+        &--price{
+            text-align: left !important;
+        }
+        &--size{
+            border-bottom: 1px solid #eeeeee;
+            margin-bottom: 15px;
+            select{
+                background-color: #f7f7f7;
+                border: 1px solid #A6A6A6;
+                color: rgba(29, 34, 48, 0.5);
+                padding: 10px;
+            }
+        }
+        &--number{
+                margin: 0;
+            input{
+                height: 25px;
+                display: inline-block;
+                width: 25px;
+            }
+        }
+        &--content{
+            .short-discription{
+                font-size: 14px;
+                line-height: 1;
+            }
+            > div,ul, p{
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+.short-discription{
+    &__title{
+        font-weight: normal;
+        color: $blue;
+    }
+    &__content{
+
+    }
+}
+.mt-item-img{
+            position: relative;
+            overflow: hidden;
+}
+.mt-sale-offer{
+    display: none;
+    position: absolute;
+    top: -28px;
+    left: -50px;
+    transform: rotate(-40deg);
+    padding: 50px 50px 15px 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: $blue;
+    color: $white;
+    font-weight: bold;
+    &__active{
+        display: inline-block;
+    }
+}
+.slider-for.slider.slick-initialized.slick-slider,
+.slider-nav .slick-slide{
+    padding: 5px;
+}
+.slick-prev{
+    left: 20px;
+    top: 45%;
+}
+.slick-next{
+    right: 50px;
+    top: 45%;
+}
+.slick-arrow:before, .slick-arrow:after{
+    background-color: #fff;
+    z-index: 2;
+    color: #999999;
+    font-size: 20px;
+    width: 30px;
+}
+.mt-item-rating{
+    margin: 0;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 15px;
+    .fa{
+        color: rgba(0, 0, 0, .2);
+        padding-right: 2px; 
+    }
+    .active{
+        color: gold;
+    }
+}
+.mt-item-quantity{
+    h5{
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-right: 20px;
+    }
+}
+
+.mt-number-picker{
+    border: 1px solid #a4a4a4;
+    height: 40px;
+    a{
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        vertical-align: bottom;
+        text-align: center;
+    }
+    input{
+        border: 0;
+    }
+}
+.mt-product-categories{
+    &__title{
+        text-transform: uppercase;
+        h3{
+            font-size: 20px;
+            padding: 18px;
+            background-color: $blue;
+            color: $white;
+        }
+    }
+    &__list{
+        background-color: #1d2230;
+        color: #fff;
+        text-transform: capitalize;
+        padding: 20px;
+        margin-bottom: 30px;
+        display: block;
+        span{
+            display: inline-block;
+        }
+        &--main > li{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 10px 0;
+            &:last-of-type{
+                border-bottom: 0;
+                padding-bottom: 0;
+            }
+            .fa{
+                align-self: center;
+            }
+        }&--sub {
+            display: block;
+            width: 100%;
+            margin-left: 18px;
+            font-weight: 400;
+            li{
+                padding-left: 20px;
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.5);;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+.mt-recently-viewed{
+    background-color: rgba(213, 213, 213, .3);
+    &__heading{
+        background-color: $blue;
+        color: #fff;
+        h4{
+            width: 100%;
+            padding: 0 15px;
+            line-height: 2.5;
+            margin: 0;
+            a{
+                color: #fff;
+            }
+        }
+    }
+    &__item{
+        padding: 20px 0;
+        &--title{
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        &--price{
+            color: $blue;
+            font-weight: bold;
+        }
+    }
+}
+
+mt-item-page .mt-item-info  .mt-product .mt-btn.mt-btn_cart{
+    width: auto;
+    max-width: 170px;
+}
+// my css ends

@@ -1,0 +1,137 @@
+.mt-shop-banner:after{
+    width: 415px;
+    right: -240px;
+}.mt-shop-banner:before{
+    left: -180px;
+}
+.mt-shop-banner .mt-left_edge{
+    width: 125px;
+    position: static;
+}
+.mt-shop-banner:hover .mt-banner_thumb {
+    ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.mt-shop-banner:hover .mt-banner_thumb:hover,
+.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb,
+.mt-shop-banner:hover .mt-banner_thumb:last-child {
+    ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.mt-shop-banner:hover .mt-banner_thumb img.mt-thumb {
+    left: -21%;
+}
+.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-thumb,
+.mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-thumb,
+.mt-shop-banner:hover .mt-banner_thumb:hover img.mt-thumb {
+    opacity: 1;
+}
+.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-full,
+.mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-full,
+.mt-shop-banner:hover .mt-banner_thumb:hover img.mt-full {
+    opacity: 1;
+} 
+.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
+.mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
+    opacity: 1;
+    top: 0;
+    top: auto;
+    left: 12%;
+    bottom: -30px;
+}
+.mt-banner_thumb:hover .mt-slider_caption, .mt-banner_section .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption, .mt-banner_section:hover .mt-banner_thumb:last-child .mt-slider_caption {
+    opacity: 0;
+    top: 0;
+}
+.mt-banner_section .mt-slider_caption{
+    top: auto;
+    bottom: 0;
+    left: 12%;
+}
+.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption{
+    opacity: 1;
+    width: auto;
+}
+.mt-shop-banner .mt-banner_thumb img.mt-thumb{
+    width: 155%;
+}
+@media only screen and (max-width: 1599px){
+    .mt-banner_section .mt-banner_thumb img.mt-thumb {
+        left: -75px;
+}
+}
+.mt-ad_banner{
+    figure{
+        padding-bottom: 20px;
+    }
+}
+.mt-banner_thumb .mt-product{
+    background-color: transparent;
+}
+//   shop items
+.mt-shop-items-list{
+    margin-bottom: 120px;
+}
+.mt-shop-items{
+    &__item{
+        // item-hover-effect
+    padding-bottom: 20px;
+    }
+    .mt-product{
+        margin: 0;
+        padding: 0;
+    }
+}
+// shop pagination
+.mt-pagination{
+    max-width: 400px;
+    min-width: 100px;
+    margin: auto;
+    &__pages--page, &__arrow{
+        color: #fff;
+        padding: 5px 5px;
+        background-color: #d4d4d4;
+        margin-left: 5px;
+        &:hover{
+            background-color: #1d2230;
+            color: #fff;
+            transition: all .5s ease-in;
+        }
+    }
+    &__pages{
+        list-style-type: none;
+        &--page{
+            display: inline-block;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        }
+        &--active{
+            background-color: #1d2230;
+            color: #fff;
+            transition: all .5s ease-in;
+        }
+    }
+    &__arrow{
+        font-size: 0;
+        .fa{
+            font-size: 16px;
+            padding: 4px 6px
+        }
+    }
+}
+.mt-shop-items__item 
+.mt-product{
+    padding-bottom: 20px;
+    &:hover{
+        transform: scale(1.025);
+        box-shadow:0 0 2px rgba(0, 0, 0, 0.2);
+        transition:  all .5s;
+    }
+}
+ul{
+    list-style: none;
+}

@@ -1,0 +1,131 @@
+.mt-container_margin_btn {
+    margin-bottom: -8rem;
+  }
+  
+.mt-btn.mt-btn_more {
+    border: 2px solid $white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    text-decoration: none !important;
+  }
+  
+  .mt-btn.mt-btn_more:hover {
+    background-color: $white;
+    color:$blue;
+    border: none;
+  }
+  
+  .mt-btn.mt-btn_more:after {
+    font-family: "FontAwesome";
+    content: "\f003";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-right: 0.5rem;
+  }
+  
+.mt-btn_more:hover {
+    background-color: $white;
+    color: #1d2230;
+  }
+
+  
+.mt-latest_news .mt-post .mt-btn.mt-btn_more {
+    border: 2px solid $white;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+    text-decoration: none !important;
+    font-weight: bold;
+    width: 190px;
+    height: 50px;
+  }
+  
+  .mt-latest_news .mt-post .mt-btn.mt-btn_more:hover {
+    background-color: $white;
+    color:$blue;
+    border: none;
+  }
+  
+  .mt-latest_news .mt-post .mt-btn.mt-btn_more::after {
+    font-family: "FontAwesome";
+    content: "\f178";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 0 0.5rem;
+  }
+  .mt-scores .mt-score_board .border-btn {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .mt-product .mt-btn.mt-btn_cart {
+    border: none;
+    background-color: #1d2230;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $white;
+    margin: 0.5rem 0;
+    width: 170px;
+    height: 53px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .mt-product .mt-btn.mt-btn_cart:hover {
+    background-color: $blue;
+    color: $white;
+  }
+  
+  .mt-product .mt-btn.mt-btn_cart::after {
+    font-family: "FontAwesome";
+    content: "\f217";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 0 0.5rem;
+  }
+
+  .mt-btn.mt-btn_cart,
+  .mt-btn_more {
+    padding-left: 16px;
+  }
+  
+  .mt-btn.mt-btn_cart:after,
+  .mt-btn_more:after {
+    margin-left: -10px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  
+  .mt-btn.mt-btn_cart:hover,
+  .mt-btn_more:hover {
+    padding-left: 0;
+  }
+  
+  .mt-btn.mt-btn_cart:hover:after,
+  .mt-btn_more:hover:after {
+    margin-left: 10px;
+    opacity: 1;
+  }
+  .mt-product .mt-btn.mt-btn_cart {
+    margin: 20px 0 0;
+  }      

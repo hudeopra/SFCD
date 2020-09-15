@@ -1,0 +1,94 @@
+
+.mt-footer {
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  .mt-footer .mt-footer_widget {
+    margin-bottom: 2rem;
+  }
+  
+  .mt-footer .mt-footer_widget .mt-widget_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .mt-footer .mt-footer_widget ul {
+    list-style: none;
+  }
+  
+  .mt-footer .mt-footer_widget ul li {
+    margin: 0.7rem 0;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .mt-footer .mt-footer_widget ul li::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-family: "FontAwesome";
+    content: "\f18e";
+    color: #fff;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .mt-footer .mt-footer_widget ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+  }
+  
+  .mt-footer .mt-footer_widget ul li a:hover {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .mt-footer .mt-footer_widget .mt-social-icons li {
+    list-style: none;
+    height: 35px;
+    width: 34px;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mt-footer .mt-footer_widget .mt-social-icons li a {
+    color: $blue;
+  }
+  
+  .mt-footer .mt-footer_widget .mt-social-icons li a:hover {
+    color: #1d2230;
+  }
+  
+aside.mt-footer_widget {
+    margin-bottom: 2rem;
+  }
+  
+  .mt-footer .mt-footer_widget ul {
+    padding-left: 0;
+  }
+  
+  .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .copyright .cpy-date {
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+  }
+  
+  .copyright .cpy-atm a img {
+    max-width: 40px;
+  }
+  

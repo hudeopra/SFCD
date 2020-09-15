@@ -1,0 +1,394 @@
+
+.topHeader {
+    background: #1d2230;
+    color: #fff;
+    height: 30px;
+    padding-left: 15px;
+  }
+  
+  .topHeader .sideHeader .mt-contact {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .topHeader .sideHeader .mt-contact li {
+    list-style: none;
+    padding-right: 0.8rem;
+  }
+  
+  .topHeader .sideHeader .mt-contact .email {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .topHeader .sideHeader .mt-contact .email:hover {
+    color: #a5b0d4;
+    list-style: none;
+  }
+  
+  .topHeader .sideHeader .mt-contact .email:before {
+    font-family: "FontAwesome";
+    content: "\f003";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-right: 0.5rem;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .topHeader .sideHeader .mt-contact .email span {
+      display: none;
+    }
+  }
+  
+  .topHeader .sideHeader .mt-contact .number {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .topHeader .sideHeader .mt-contact .number:hover {
+    color: #a5b0d4;
+    list-style: none;
+  }
+  
+  .topHeader .sideHeader .mt-contact .number:hover:before {
+    color: #a5b0d4;
+    list-style: none;
+  }
+  
+  .topHeader .sideHeader .mt-contact .number:before {
+    font-family: "FontAwesome";
+    content: "\f098";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-right: 0.5rem;
+    color: #fff;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .topHeader .sideHeader .mt-contact .number span {
+      display: none;
+    }
+  }
+  
+  .topHeader .login-section li {
+    list-style: none;
+    padding: 0 0.4rem;
+  }
+  
+  .topHeader .login-section li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .topHeader .login-section li a:hover {
+    color: #a5b0d4;
+    list-style: none;
+  }
+  
+  .topHeader .login-section .mt-shop {
+    margin-right: 0.6rem;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .topHeader .login-section .mt-shop {
+      display: none;
+    }
+  }
+  
+  .topHeader .login-section .mt-shop a {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    z-index: 10;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topHeader .login-section .mt-shop a:hover {
+    color: #fff;
+    list-style: none;
+  }
+  
+  .topHeader .login-section .mt-shop a:hover::after {
+    background: #a5b0d4 !important;
+  }
+  
+  .topHeader .login-section .mt-shop a::after {
+    position: absolute;
+    background: $blue;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    z-index: -10;
+    transform: skewX(-19deg);
+    text-decoration: none;
+  }
+  
+  .topHeader .login-section .mt-shop a::after:hover {
+    background: #a5b0d4 !important;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .topHeader .login-section .mt-shop a {
+      display: none;
+    }
+  }
+  .mainHeader .mt-logo-section a img {
+    max-width: 100%;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mainHeader .mt-logo-section a img {
+      max-width: 160px;
+    }
+  }
+  
+  .mainHeader .mt-nav-section {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mainHeader .mt-nav-section {
+      display: block;
+    }
+  }
+  
+  .mainHeader .mt-nav-section ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop,
+  .mainHeader .mt-nav-section ul .mt-bars {
+    list-style: none;
+    margin-right: 0.6rem;
+    list-style: none;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop a,
+  .mainHeader .mt-nav-section ul .mt-bars a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop a:hover,
+  .mainHeader .mt-nav-section ul .mt-bars a:hover {
+    color: #fff;
+    list-style: none;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop a:hover::after,
+  .mainHeader .mt-nav-section ul .mt-bars a:hover::after {
+    background: #a5b0d4 !important;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop a::after,
+  .mainHeader .mt-nav-section ul .mt-bars a::after {
+    position: absolute;
+    background: #1d2230;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    z-index: -10;
+    transform: skewX(-19deg);
+    text-decoration: none;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-shop a::after:hover,
+  .mainHeader .mt-nav-section ul .mt-bars a::after:hover {
+    background: #a5b0d4 !important;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-bars a i.fa.fa-bars {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-bars a::after {
+    background: $blue;
+  }
+  
+  .mainHeader .mt-nav-section ul .mt-bars a::after:hover {
+    background: #a5b0d4 !important;
+  }
+  
+  .mainHeader #mainnav {
+    color: #1d2230;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  
+  .mainHeader #mainnav ul {
+    display: block;
+    margin: 0;
+    text-align: right;
+  }
+  
+  .mainHeader #mainnav ul li {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .mainHeader #mainnav ul li:hover {
+    color: #fff;
+  }
+  
+  .mainHeader #mainnav ul li:hover::after {
+    position: absolute;
+    background: #1d2230;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    z-index: -10;
+    transform: skewX(-19deg);
+    top: 0;
+  }
+  
+  .mainHeader #mainnav ul li a {
+    color: $blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 0.3rem;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+  }
+  
+  .mainHeader #mainnav ul li a:hover {
+    color: #fff;
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .mainHeader #mainnav ul li a {
+      padding: 1rem;
+    }
+  }
+  
+  .mainHeader .mt-active {
+    margin-right: 0.6rem;
+    color: #fff !important;
+  }
+  
+  .mainHeader .mt-active a {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    color: #fff;
+  }
+  
+  .mainHeader .mt-active a::after {
+    position: absolute;
+    background: #1d2230;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    z-index: -10;
+    transform: skewX(-19deg);
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mainHeader .mt-menu-section {
+      height: 0;
+    }
+  }
+  
+  .mainHeader .mt-menu-section .mt-add {
+    margin-right: 190px;
+  }
+  
+  .mainHeader .mt-menu-section .mt-add li {
+    list-style: none;
+  }
+  
+  .mainHeader .mt-menu-section .mt-add li img {
+    transform: skewX(-19deg);
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mainHeader .mt-menu-section .mt-add li {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .mainHeader .mt-menu-section #mainnav {
+      display: none;
+      min-height: 100vh;
+      background: #1d2230;
+      max-width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 300;
+      top: 0;
+      bottom: 0;
+    }
+    .mainHeader .mt-menu-section #mainnav ul {
+      padding: 0;
+    }
+    .mainHeader .mt-menu-section #mainnav ul li {
+      list-style: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      height: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    }
+    .mainHeader .mt-menu-section #mainnav ul li a {
+      color: #fff;
+    }
+    .mainHeader .mt-menu-section #mainnav ul li:hover {
+      background-color: $blue;
+      cursor: pointer;
+    }
+    .mainHeader .mt-menu-section #mainnav ul .mt-active a::after {
+      background: transparent;
+    }
+  }
+  
+  .mainHeader #mainnav ul .mt-active a {
+    color: #fff;
+  }
+    
