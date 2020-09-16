@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Tajawal:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Tajawal:wght@200;300&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -2739,6 +2734,41 @@ aside {
   }
 }
 
+.mt-shopping-page a:hover {
+  text-decoration: none;
+}
+
+.mt-shopping-page .mt-page-menu .items .item a span {
+  padding: 8px 15px;
+}
+
+.mt-shopping-page .mt-app_section:before {
+  display: none;
+}
+
+.mt-shopping-page .slider-for.slider.slick-initialized.slick-slider,
+.mt-shopping-page .slider-nav .slick-slide {
+  padding: 5px;
+}
+
+.mt-shopping-page .slick-prev {
+  left: 20px;
+  top: 45%;
+}
+
+.mt-shopping-page .slick-next {
+  right: 50px;
+  top: 45%;
+}
+
+.mt-shopping-page .slick-arrow:before, .mt-shopping-page .slick-arrow:after {
+  background-color: #fff;
+  z-index: 2;
+  color: #999999;
+  font-size: 20px;
+  width: 30px;
+}
+
 .mt-shop-banner:after {
   width: 415px;
   right: -240px;
@@ -2831,10 +2861,6 @@ aside {
   background-color: transparent;
 }
 
-.mt-shop-items-list {
-  margin-bottom: 120px;
-}
-
 .mt-shop-items__item {
   padding-bottom: 20px;
 }
@@ -2850,9 +2876,12 @@ aside {
   margin: auto;
 }
 
+.mt-pagination a {
+  color: #fff;
+}
+
 .mt-pagination__pages--page, .mt-pagination__arrow {
   color: #fff;
-  padding: 5px 5px;
   background-color: #d4d4d4;
   margin-left: 5px;
 }
@@ -2870,9 +2899,16 @@ aside {
 
 .mt-pagination__pages--page {
   display: inline-block;
-  height: 35px;
-  width: 35px;
   text-align: center;
+}
+
+.mt-pagination__pages--page a {
+  display: inline-block;
+  width: 25px;
+}
+
+.mt-pagination__pages--page a:hover {
+  text-decoration: none;
 }
 
 .mt-pagination__pages--active {
@@ -2908,6 +2944,172 @@ aside {
 
 ul {
   list-style: none;
+}
+
+.mt-login-register {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.mt-login-register label {
+  color: #5D625C;
+  font-weight: 700;
+  display: block;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.mt-login-register form {
+  height: 100%;
+}
+
+.mt-login-register__login {
+  padding: 45px 30px;
+  background-color: #1f3a93;
+  color: #fff;
+}
+
+.mt-login-register__login label {
+  color: #fff;
+}
+
+.mt-login-register__register {
+  padding: 45px 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #231916;
+}
+
+.mt-login-register__register input[type=submit]:hover {
+  color: #231916 !important;
+}
+
+.mt-login-register--title {
+  margin-bottom: 20px;
+}
+
+.mt-login-register .mt-input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.mt-login-register input[type=submit] {
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: 0;
+  background-color: #231916;
+}
+
+.mt-login-register input[type=submit]:hover {
+  border: 3px solid #231916;
+  background-color: transparent;
+}
+
+.mt-login-register a {
+  color: #fff;
+}
+
+.mt-login-register a:hover {
+  opacity: .5;
+}
+
+#accordion .card {
+  margin-bottom: 10px;
+}
+
+#accordion .card:last-of-type {
+  margin-bottom: 0;
+}
+
+#accordion .card button {
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  color: #231916;
+  position: relative;
+}
+
+#accordion .card button:focus, #accordion .card button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#accordion .card button:hover {
+  text-decoration: none;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#accordion .card button .fa {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#accordion .card button .fa-minus {
+  display: inline-block;
+}
+
+#accordion .card button .fa-plus {
+  display: none;
+}
+
+#accordion .card button.collapsed .fa-minus {
+  display: none;
+}
+
+#accordion .card button.collapsed .fa-plus {
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-page ~ .mt-footer > div > div > div:first-of-type {
+    display: none;
+  }
+}
+
+.contact-form-wrapper iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contact-form-wrapper textarea {
+  width: 100%;
+  min-height: 150px;
+}
+
+.contact-wrapper {
+  padding: 15px 10px;
+  background-color: #1f3a93;
+  color: #fff;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  height: 100%;
+  line-break: anywhere;
+}
+
+.contact-wrapper h3 {
+  font-size: 22px;
+  padding-bottom: 5px;
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.contact-wrapper address {
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 .mt-item-banner_section {
@@ -2976,6 +3178,10 @@ ul {
   margin-bottom: 15px;
 }
 
+.mt-item-info__details--size label {
+  margin-right: 23px;
+}
+
 .mt-item-info__details--size select {
   background-color: #f7f7f7;
   border: 1px solid #A6A6A6;
@@ -2984,6 +3190,10 @@ ul {
 }
 
 .mt-item-info__details--number {
+  margin: 0;
+}
+
+.mt-item-info__details--number .mt-product .mt-btn.mt-btn_cart {
   margin: 0;
 }
 
@@ -3031,29 +3241,6 @@ ul {
   display: inline-block;
 }
 
-.slider-for.slider.slick-initialized.slick-slider,
-.slider-nav .slick-slide {
-  padding: 5px;
-}
-
-.slick-prev {
-  left: 20px;
-  top: 45%;
-}
-
-.slick-next {
-  right: 50px;
-  top: 45%;
-}
-
-.slick-arrow:before, .slick-arrow:after {
-  background-color: #fff;
-  z-index: 2;
-  color: #999999;
-  font-size: 20px;
-  width: 30px;
-}
-
 .mt-item-rating {
   margin: 0;
   border-bottom: 1px solid #eeeeee;
@@ -3073,11 +3260,13 @@ ul {
   text-transform: uppercase;
   font-weight: normal;
   margin-right: 20px;
+  font-size: 16px;
 }
 
 .mt-number-picker {
   border: 1px solid #a4a4a4;
-  height: 40px;
+  height: 53px;
+  margin-right: 30px;
 }
 
 .mt-number-picker a {
@@ -3112,8 +3301,12 @@ ul {
   display: block;
 }
 
-.mt-product-categories__list span {
-  display: inline-block;
+.mt-product-categories__list a {
+  color: #fff;
+}
+
+.mt-product-categories__list a:hover {
+  opacity: .8;
 }
 
 .mt-product-categories__list--main > li {
@@ -3126,8 +3319,8 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 10px 0;
 }
@@ -3146,8 +3339,8 @@ ul {
 .mt-product-categories__list--sub {
   display: block;
   width: 100%;
-  margin-left: 18px;
-  font-weight: 400;
+  margin-left: 16px;
+  font-weight: normal;
 }
 
 .mt-product-categories__list--sub li {
@@ -3195,12 +3388,6 @@ ul {
 mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
   width: auto;
   max-width: 170px;
-}
-
-.mt-cart-page > .row > div,
-.shopping-items > div {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .mt-cart-items {
@@ -3292,6 +3479,10 @@ mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
   font-weight: 500;
 }
 
+.mt-cart-checkout__btn:hover {
+  background-color: #1f3a93;
+}
+
 .mt-cart-checkout__btn a {
   display: block;
   color: #fff;
@@ -3329,11 +3520,18 @@ mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
 }
 
 .checkout-form > .row > div {
-  padding-bottom: 20px;
+  padding-bottom: 8px;
 }
 
 .checkout-form > .row > div:last-of-type {
   padding-bottom: 0;
+}
+
+.checkout-form h2 {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  border-bottom: 1px solid gray;
 }
 
 .checkout-form label {
@@ -3344,7 +3542,7 @@ mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
   text-transform: capitalize;
 }
 
-.checkout-form input, .checkout-form select {
+.checkout-form input, .checkout-form select, .checkout-form textarea {
   height: 50px;
   font-size: 18px;
   text-transform: capitalize;
@@ -3390,13 +3588,17 @@ mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
   display: inline-block;
 }
 
+.checkout-form__three label {
+  padding-left: 15px;
+}
+
 .checkout-form__three label:before {
   content: '';
   position: absolute;
   top: 5px;
   left: 0;
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   border: 1px solid #1d2230;
   border-radius: 50%;
 }
@@ -3405,8 +3607,8 @@ mt-item-page .mt-item-info .mt-product .mt-btn.mt-btn_cart {
   content: '';
   display: none;
   position: absolute;
-  top: 9px;
-  left: 4px;
+  top: 10px;
+  left: 5.4px;
   height: 8px;
   width: 8px;
   background-color: #1d2230;

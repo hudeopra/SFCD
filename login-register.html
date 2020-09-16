@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | San Fernando Club Deportivo </title>
+    <title>Login | Register</title>
     <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -117,7 +117,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="mt-news-slider_caption">
-                        <h1 class="mt-main_title">Cart</h1>
+                        <h1 class="mt-main_title">Checkout</h1>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
                                 Home </a>
                         </li>
                         <li class="item mt_page">
-                            <strong>Cart</strong>
+                            <strong>Login / Register</strong>
                         </li>
                     </ul>
                 </div>
@@ -142,133 +142,73 @@
         </div>
         <!-- Breadcumbs Ends-->
     </header>
-    <main class="mt-cart-page container mt-shopping-page pb-5">
-        <section class="row">
-            <div class="mt-item  col-12 col-lg-9">
-                <form class="woocommerce-cart-form row" method="post">
-                    <div class="mt-cart-items__heading col-12">
-                        <div class="row">
-                            <div class="mt-cart-items__title col-5">item</div>
-                            <div class="mt-cart-items__title col-2">Price</div>
-                            <div class="mt-cart-items__title col-2">Quantity</div>
-                            <div class="mt-cart-items__title col-3">Sub-total</div>
-
-                        </div>
+    <main class="mt-shopping-page ">
+        <section class="container ">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class=" mt-login-register pb-5">
+                        <form class="mt-login-register__login">
+                            <h2 class="mt-login-register--title">Sign in</h2>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" placeholder="Email Address" class="mt-input">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Password" class="mt-input">
+                                </div>
+                                <div class="col-6 d-flex align-items-baseline">
+                                    <input type="checkbox" id="remember" value="Remember me"
+                                        style="margin-right: 20px;">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a href="#" class="mt-forget">Forget Password?</a>
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="submit" name="submit" value="Sign In"
+                                        class="mt-white_bg mt-btn mt-submit">
+                                </div>
+                            </div>
+                            <!-- row -->
+                        </form>
                     </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
-                            </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
-                            </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
-                            </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
-                            </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
-                            </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
-                            </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                <div class="cart-continue-update row justify-content-between">
-                    <div class=" cart-continue-update__continue col-12 col-sm-6 col-md-4">
-                        <a href="#">Continue Shopping</a>
-                    </div>
-                    <div class="cart-continue-update__update col-12 col-sm-6 col-md-4">
-                        <a href="#">Update Shopping Cart</a>
-                    </div>
+                    <!-- mt-sign_in_box -->
                 </div>
-            </div>
-            <div class=" col-12 col-lg-3">
-                <div class="mt-cart-checkout">
-                    <h2>summery</h2>
-                    <div class="mt-cart-checkout__sub-total d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Sub-total</span>
-                        <span class="mt-cart-checkout__right mt-cart-checkout__sub-total--amount">$4.50</span>
-                    </div>
-                    <div class="mt-cart-checkout__shipping d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Shipping</span>
-                        <div class="mt-cart-checkout__right mt-cart-checkout__shipping--types">
-                            <div>
-                                <label for="flat-rate">Flat rate</label>
-                                <input type="radio" id="flat-rate" name="shipping-type" checked>
+                <!-- col -->
+                <div class="col-md-6">
+                    <div class=" mt-login-register pb-5">
+                        <form class="mt-login-register__register">
+                            <h2 class="mt-login-register--title">Register</h2>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" placeholder="Full Name" class="mt-input">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label id="eamil">Email Address</label>
+                                    <input type="email" id="email" placeholder="Email Address" class="mt-input">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" placeholder="Password" class="mt-input">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="submit" name="submit" value="Register"
+                                        class="mt-white_bg mt-btn mt-submit">
+                                </div>
                             </div>
-                            <div>
-                                <label for="free-shipping">Free shipping</label>
-                                <input type="radio" id="free-shipping" name="shipping-type">
-                            </div>
-                            <div>
-                                <label for="local-pickup">Local pickup</label>
-                                <input type="radio" id="local-pickup" name="shipping-type">
-                            </div>
-                            <p>Shipping options will be updated during checkout.</p>
-                            <a href="#">Calculate shipping</a>
-                        </div>
+                            <!-- row -->
+                        </form>
                     </div>
-                    <div class="mt-cart-checkout__total d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Total</span>
-                        <span class="mt-cart-checkout__right mt-cart-checkout__total--amount">$4.50</span>
-                    </div>
-                    <div class="mt-cart-checkout__btn">
-                        <a href="#">
-                            proceed to checkout
-                        </a>
-                    </div>
+                    <!-- mt-sign_in_box -->
                 </div>
+                <!-- col -->
             </div>
+            <!-- row -->
         </section>
+        <!-- container -->
     </main>
 
     <!-- footer-section starts here -->

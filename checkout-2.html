@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout</title>
+    <title>Checkout | San Fernando Club Deportivo </title>
     <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -112,7 +112,7 @@
         <div class="mt-news-banner_section">
             <div class="mt-left_edge"></div>
             <div class="mt-news_thumb">
-                <img src="assets/img/banner-2-thumb.jpg" alt="banner pic 4" class="mt-thumb">
+                <img src="assets/img/shop-banner.png" alt="banner pic 4" class="mt-thumb">
             </div>
             <div class="container-lg">
                 <div class="row">
@@ -142,7 +142,7 @@
         </div>
         <!-- Breadcumbs Ends-->
     </header>
-    <main>
+    <main class="mt-shopping-page">
         <section class="container">
 
             <div class="mt-page-menu mt-small_padding">
@@ -168,25 +168,22 @@
                 </div>
             </div>
             <div class="row">
-                <form action="" class="checkout-form checkout-form__two col-12 col-md-6 mt-small_padding">
+                <form action=""
+                    class="checkout-form checkout-form__two checkout-form__three col-12 col-md-6 mt-small_padding">
                     <div class="row">
-                        <div class="col-12 ">
-                            <label for="country-region">Country / Region</label>
-                            <input type="text" id="country-region" placeholder="Country / Region" required>
+
+
+                        <div class="col-12 radio">
+                            <input type="radio" id="flat-rate" name="shipping-type" checked>
+                            <label for="flat-rate">Flat rate</label>
                         </div>
-                        <div class="col-12 ">
-                            <label for="street-address">Street Address</label>
-                            <select name="street-address" id="street-address">
-                                <option selected="" disabled="">Choose an option</option>
-                                <option value="a">a</option>
-                                <option value="b">b</option>
-                                <option value="c">c</option>
-                                <option value="d">d</option>
-                            </select>
+                        <div class="col-12 radio">
+                            <input type="radio" id="free-shipping" name="shipping-type">
+                            <label for="free-shipping">Free shipping</label>
                         </div>
-                        <div class="col-12">
-                            <label for="town-city">Town / City</label>
-                            <input type="text" id="town-city" placeholder="Town / City" required>
+                        <div class="col-12 radio">
+                            <input type="radio" id="local-pickup" name="shipping-type">
+                            <label for="local-pickup">Local pickup</label>
                         </div>
                         <div class="col-4">
                             <input type="submit" class="checkout-form__submit">

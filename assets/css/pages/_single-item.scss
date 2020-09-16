@@ -58,6 +58,10 @@
         &--size{
             border-bottom: 1px solid #eeeeee;
             margin-bottom: 15px;
+            label{
+                
+    margin-right: 23px;
+            }
             select{
                 background-color: #f7f7f7;
                 border: 1px solid #A6A6A6;
@@ -67,6 +71,10 @@
         }
         &--number{
                 margin: 0;
+                .mt-product .mt-btn.mt-btn_cart{
+                    margin: 0;
+                }
+
             input{
                 height: 25px;
                 display: inline-block;
@@ -113,25 +121,6 @@
         display: inline-block;
     }
 }
-.slider-for.slider.slick-initialized.slick-slider,
-.slider-nav .slick-slide{
-    padding: 5px;
-}
-.slick-prev{
-    left: 20px;
-    top: 45%;
-}
-.slick-next{
-    right: 50px;
-    top: 45%;
-}
-.slick-arrow:before, .slick-arrow:after{
-    background-color: #fff;
-    z-index: 2;
-    color: #999999;
-    font-size: 20px;
-    width: 30px;
-}
 .mt-item-rating{
     margin: 0;
     border-bottom: 1px solid #eeeeee;
@@ -149,12 +138,14 @@
         text-transform: uppercase;
         font-weight: normal;
         margin-right: 20px;
+        font-size: 16px;
     }
 }
 
 .mt-number-picker{
     border: 1px solid #a4a4a4;
-    height: 40px;
+    height: 53px;
+    margin-right: 30px;
     a{
         display: inline-block;
         height: 25px;
@@ -183,16 +174,19 @@
         padding: 20px;
         margin-bottom: 30px;
         display: block;
-        span{
-            display: inline-block;
+        a{
+            color: #fff;
+            &:hover{
+                opacity: .8;
+            }
         }
         &--main > li{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             width: 100%;
-            font-size: 22px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 500;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             padding: 10px 0;
             &:last-of-type{
@@ -205,8 +199,8 @@
         }&--sub {
             display: block;
             width: 100%;
-            margin-left: 18px;
-            font-weight: 400;
+            margin-left: 16px;
+            font-weight: normal;
             li{
                 padding-left: 20px;
                 font-size: 18px;

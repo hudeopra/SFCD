@@ -1,8 +1,4 @@
-.mt-cart-page > .row > div,
-.shopping-items > div{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+
 .mt-cart-items{
     padding:15px;
     background-color: rgba(0, 0, 0, .1);
@@ -78,6 +74,9 @@
         border-radius: 2px;
         text-transform: capitalize;
         font-weight: 500;
+        &:hover{
+            background-color: $blue;
+        }
         a{
         display: block;
         color: $white;
@@ -118,10 +117,15 @@
 }
 .checkout-form{
     >.row > div{
-        padding-bottom: 20px;
+        padding-bottom: 8px;
         &:last-of-type{
             padding-bottom: 0;
         }
+    }
+    h2{padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 26px;
+        border-bottom: 1px solid gray;
     }
     label{
         color:#5D625C;
@@ -130,7 +134,7 @@
         font-size: 18px;
         text-transform: capitalize;
     }
-    input, select{
+    input, select, textarea{
         height: 50px;
         font-size: 18px;
         text-transform: capitalize;
@@ -164,13 +168,14 @@
                display: inline-block;
             }
         label{
+            padding-left: 15px;
             &:before{
                 content: '';
                 position: absolute;
                 top: 5px;
                 left: 0;
-                height: 16px;
-                width: 16px;
+                height: 18px;
+                width: 18px;
                 border: 1px solid #1d2230;
                 border-radius: 50%;
             }
@@ -178,8 +183,8 @@
                 content: '';
                 display: none;
                 position: absolute;
-                top: 9px;
-                left: 4px;
+                top: 10px;
+                left: 5.4px;
                 height: 8px;
                 width: 8px;
                 background-color: #1d2230;
