@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | San Fernando Club Deportivo </title>
+    <title>Item | San Fernando Club Deportivo </title>
     <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/news.css">
 
 </head>
@@ -86,7 +87,7 @@
                             </li>
                         </ul>
                         <nav id="mainnav" class="group my-1">
-                            <!-- <div id="menu"><i class="fas fa-bars"></i></div> -->
+                            <!-- <div id="menu"><i class="fa fa-bars"></i></div> -->
                             <ul>
                                 <li>
                                     <a href="index.html">Home</a></li>
@@ -107,7 +108,6 @@
         </div>
         </div>
 
-
         <!-- Banner Image Section Starts -->
         <div class="mt-news-banner_section">
             <div class="mt-left_edge"></div>
@@ -117,7 +117,8 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="mt-news-slider_caption">
-                        <h1 class="mt-main_title">Cart</h1>
+                        <h1 class="mt-main_title">Shop</h1>
+                        <h4>Men</h4>
                     </div>
                 </div>
             </div>
@@ -125,16 +126,24 @@
         <!-- Banner Image Section ends -->
 
         <!-- Breadcumbs Starts-->
-        <div class="breadcrumbs">
+        <div class="breadcrumbs mt-medium_padding">
             <div class="container-lg">
-                <div class="container-inner mt-small_padding container">
+                <div class="container-inner  mt-small_padding ">
                     <ul class="items">
                         <li class="item home">
                             <a href="index.html" title="Go to Home Page">
                                 Home </a>
                         </li>
+                        <li class="item shop">
+                            <a href="index.html" title="Go to Shop Page">
+                                Shop </a>
+                        </li>
+                        <li class="item Men">
+                            <a href="index.html" title="Go to Category Page">
+                                Men </a>
+                        </li>
                         <li class="item mt_page">
-                            <strong>Cart</strong>
+                            <strong>2019-2020 Season Home Socks</strong>
                         </li>
                     </ul>
                 </div>
@@ -142,135 +151,242 @@
         </div>
         <!-- Breadcumbs Ends-->
     </header>
-    <main class="mt-cart-page container mt-shopping-page pb-5">
-        <section class="row">
-            <div class="mt-item  col-12 col-lg-9">
-                <form class="woocommerce-cart-form row" method="post">
-                    <div class="mt-cart-items__heading col-12">
-                        <div class="row">
-                            <div class="mt-cart-items__title col-5">item</div>
-                            <div class="mt-cart-items__title col-2">Price</div>
-                            <div class="mt-cart-items__title col-2">Quantity</div>
-                            <div class="mt-cart-items__title col-3">Sub-total</div>
+    <main class="mt-item-page container mt-shopping-page">
 
+        <!-- item details starts here -->
+        <section class="mt-item-info row">
+            <div class="mt-item-info__details col-12 col-lg-9">
+                <div class="row">
+                    <div class="mt-item-info__details--img col-12 col-sm-6">
+                        <div <div class="slider-for slider">
+                            <figure>
+                                <div class="mt-sale-offer mt-sale-offer__active">offer</div>
+                                <img src="http://placehold.it/350x300?text=1">
+                            </figure>
+                            <figure>
+                                <div class="mt-sale-offer mt-sale-offer__active">offer</div>
+                                <img src="http://placehold.it/350x300?text=2">
+                            </figure>
+                            <figure>
+                                <div class="mt-sale-offer mt-sale-offer__active">offer</div>
+                                <img src="http://placehold.it/350x300?text=3">
+                            </figure>
+                            <figure>
+                                <div class="mt-sale-offer mt-sale-offer__active">offer</div>
+                                <img src="http://placehold.it/350x300?text=4">
+                            </figure>
                         </div>
-                    </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
+                        <div class="slider-nav slider">
+                            <div>
+                                <img src="http://placehold.it/350x300?text=1">
                             </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
+                            <div>
+                                <img src="http://placehold.it/350x300?text=2">
                             </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <div>
+                                <img src="http://placehold.it/350x300?text=3">
                             </div>
-                        </div>
-                    </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
-                            </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
-                            </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <div>
+                                <img src="http://placehold.it/350x300?text=4">
                             </div>
                         </div>
                     </div>
-                    <div class="mt-cart-items mt-cart-items__item col-12">
-                        <div class="row align-items-center">
-                            <div class="mt-cart-items__item--image col-2">
-                                <figure>
-                                    <img src="assets/img/item-img.png" alt="Product-image">
-                                </figure>
+                    <div class="mt-item-info__details--content mt-product col-12 col-sm-6">
+                        <div class="mt-section_header">
+                            <h2 class="mt-section_title">2019-2020 Season Home Socks</h2>
+                        </div>
+                        <ul class="mt-item-rating row">
+                            <li><i class="fa fa-star active"></i></li>
+                            <li><i class="fa fa-star active"></i></li>
+                            <li><i class="fa fa-star active"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <div class="short-discription">
+                            <h3 class="short-discription__title">SAR. 1200</h3>
+                            <p class="short-discription__content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="mt-item-info__details--price mt-price">
+                            € 9.95 - € 19.50
+                        </div>
+                        <div class="mt-item-info__details--size">
+                            <label for="size" class="">SIZE </label>
+                            <select name="size" id="size">
+                                <option selected="" disabled="">Choose an option</option>
+                                <option value="small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                                <option value="extra-large">Extra Large</option>
+                            </select>
+                        </div>
+
+                        <div class="mt-item-info__details--number row align-items-center">
+
+                            <div class="mt-item-quantity d-flex">
+
+                                <h5 class="align-self-center ">span</h5>
+                                <div class="mt-number-picker d-flex align-items-center">
+                                    <a href="#">-</a>
+                                    <input type="text" step="1" min="1" max="5" value="1" autocomplete="off"
+                                        class="text-center">
+                                    <a href="#">+</a>
+                                </div>
                             </div>
-                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp
-                                    2019-2020
-                                    Sweatshirt</a></div>
-                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
-                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
-                                    class="text-center" style="max-width: 100%;">
-                            </div>
-                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
-                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
-                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            <div class="cart col-6">
+                                <a class="mt-btn mt-btn_cart" href="">Add to Cart</a>
                             </div>
                         </div>
-                    </div>
-                </form>
-                <div class="cart-continue-update row justify-content-between">
-                    <div class=" cart-continue-update__continue col-12 col-sm-6 col-md-4">
-                        <a href="#">Continue Shopping</a>
-                    </div>
-                    <div class="cart-continue-update__update col-12 col-sm-6 col-md-4">
-                        <a href="#">Update Shopping Cart</a>
+                        <p class="item-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                            pariatur ut magni eveniet
+                            ipsum! Provident et temporibus atque? Veniam possimus perferendis sunt porro dolore placeat?
+                        </p>
                     </div>
                 </div>
+
             </div>
-            <div class=" col-12 col-lg-3">
-                <div class="mt-cart-checkout">
-                    <h2>summery</h2>
-                    <div class="mt-cart-checkout__sub-total d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Sub-total</span>
-                        <span class="mt-cart-checkout__right mt-cart-checkout__sub-total--amount">$4.50</span>
+            </div>
+            <div class="mt-product-categories col-12 col-lg-3">
+
+                <div class="mt-product-categories__list row">
+                    <ul class="mt-product-categories__list--main">
+                        <li><a href="#">men</a><i class="fa fa-minus" aria-hidden="true"></i>
+                            <ul class="mt-product-categories__list--sub">
+                                <li><a href="#">scarves</a></li>
+                                <li><a href="#">fashion</a></li>
+                                <li><a href="#">shorts & socks</a></li>
+                                <li><a href="#">headwear</a></li>
+                                <li><a href="#">winter</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">women</a><i class="fa fa-plus" aria-hidden="true"></i>
+                            <ul class="mt-product-categories__list--sub">
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">kids</a><i class="fa fa-plus" aria-hidden="true"></i>
+                            <ul class="mt-product-categories__list--sub">
+                                <li></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">merchandising</a><i class="fa fa-plus" aria-hidden="true"></i>
+                            <ul class="mt-product-categories__list--sub">
+                                <li></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-recently-viewed row">
+                    <div class="mt-recently-viewed__heading col-12">
+                        <h4>Recently Viewed Poducts</h4>
                     </div>
-                    <div class="mt-cart-checkout__shipping d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Shipping</span>
-                        <div class="mt-cart-checkout__right mt-cart-checkout__shipping--types">
-                            <div>
-                                <label for="flat-rate">Flat rate</label>
-                                <input type="radio" id="flat-rate" name="shipping-type" checked>
-                            </div>
-                            <div>
-                                <label for="free-shipping">Free shipping</label>
-                                <input type="radio" id="free-shipping" name="shipping-type">
-                            </div>
-                            <div>
-                                <label for="local-pickup">Local pickup</label>
-                                <input type="radio" id="local-pickup" name="shipping-type">
-                            </div>
-                            <p>Shipping options will be updated during checkout.</p>
-                            <a href="#">Calculate shipping</a>
+                    <div class="mt-recently-viewed__item d-flex">
+                        <div class="mt-recently-viewed__item--img col-4">
+
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-3.png" alt="product_title">
+                            </figure>
+                        </div>
+                        <div class="mt-recently-viewed__item--content col-8">
+                            <h5 class="mt-recently-viewed__item--title">
+                                <a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp 2019-2020
+                                    Sweatshirt</a>
+                            </h5>
+                            <p class="mt-recently-viewed__item--price">
+                                $ 13.95
+                            </p>
                         </div>
                     </div>
-                    <div class="mt-cart-checkout__total d-flex justify-content-between">
-                        <span class="mt-cart-checkout__left">Total</span>
-                        <span class="mt-cart-checkout__right mt-cart-checkout__total--amount">$4.50</span>
+                    <div class="mt-recently-viewed__item d-flex">
+                        <div class="mt-recently-viewed__item--img col-4">
+
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-3.png" alt="product_title">
+                            </figure>
+                        </div>
+                        <div class="mt-recently-viewed__item--content col-8">
+                            <h5 class="mt-recently-viewed__item--title">
+                                <a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp 2019-2020
+                                    Sweatshirt</a> </h5>
+                            <p class="mt-recently-viewed__item--price">
+                                $ 13.95
+                            </p>
+                        </div>
                     </div>
-                    <div class="mt-cart-checkout__btn">
-                        <a href="#">
-                            proceed to checkout
-                        </a>
+                    <div class="mt-recently-viewed__item d-flex">
+                        <div class="mt-recently-viewed__item--img col-4">
+
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-3.png" alt="product_title">
+                            </figure>
+                        </div>
+                        <div class="mt-recently-viewed__item--content col-8">
+                            <h5 class="mt-recently-viewed__item--title">
+                                <a href="http://sfcd.961digital.com/shop-item.html">1st Team Temp 2019-2020
+                                    Sweatshirt</a> </h5>
+                            <p class="mt-recently-viewed__item--price">
+                                $ 13.95
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
+        <!-- item details ends here -->
+        <!-- related items start here -->
+        <section class="mt-related-items pb-5">
+            <div class="mt-section_header">
+                <h2 class="mt-section_title">related-items</h2>
+            </div>
+            <div class="related-items__list mt-shop-items mt-shop-items-list">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-3 mt-shop-items__item">
+                        <div class="mt-product d-flex flex-column align-items-center justify-content-center">
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-4.png" alt="product_title">
+                            </figure>
+                            <h4 class="mt-product_title ">SFCD Bag</h4>
+                            <div class="mt-price">€ 9.95 - € 19.50</div>
+                            <a class="mt-btn mt-btn_cart" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-shop-items__item">
+                        <div class="mt-product d-flex flex-column align-items-center justify-content-center">
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-3.png" alt="product_title">
+                            </figure>
+                            <h4 class="mt-product_title ">SFCD Shocks</h4>
+                            <div class="mt-price">€ 9.95 - € 19.50</div>
+                            <a class="mt-btn mt-btn_cart" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-shop-items__item">
+                        <div class="mt-product d-flex flex-column align-items-center justify-content-center">
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-4.png" alt="product_title">
+                            </figure>
+                            <h4 class="mt-product_title ">SFCD Bag</h4>
+                            <div class="mt-price">€ 9.95 - € 19.50</div>
+                            <a class="mt-btn mt-btn_cart" href="">Add to Cart</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 mt-shop-items__item">
+                        <div class="mt-product d-flex flex-column align-items-center justify-content-center">
+                            <figure class="mt-thumb">
+                                <img src="assets/img/fan-3.png" alt="product_title">
+                            </figure>
+                            <h4 class="mt-product_title ">SFCD Shocks</h4>
+                            <div class="mt-price">€ 9.95 - € 19.50</div>
+                            <a class="mt-btn mt-btn_cart" href="">Add to Cart</a>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- related items ends here -->
+    </main>
     <!-- footer-section starts here -->
     <footer class="mt-footer mt-dark_bgr mt-small_padding">
         <div class="container-lg">
@@ -433,6 +549,26 @@
     <script type="text/javascript" src="assets/library/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/library/slick-1.8.1/slick/slick.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.slider-for',
+            focusOnSelect: true,
+        });
+    </script>
 </body>
 
 </html>

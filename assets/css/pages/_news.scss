@@ -43,7 +43,7 @@
 }
 
 .mt-primary_bgr {
-  background: $blue;
+  background: #1f3a93;
 }
 
 .mt-secondary_bgr {
@@ -75,7 +75,7 @@
 
 .mt-btn.mt-btn_more:hover {
   background-color: #ffff;
-  color: $blue;
+  color: #1f3a93;
   border: none;
 }
 
@@ -93,6 +93,18 @@
   background-color: #1d2230;
 }
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 
 .mt-btn_more:hover {
   background-color: #ffff;
@@ -286,16 +298,9 @@ aside {
 
 .mt-news-banner_section {
   height: 400px;
-  background-color: red;
   max-width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (min-width: 1600px) {
-  .mt-news-banner_section {
-    height: 700px;
-  }
 }
 
 .mt-news-banner_section::before, .mt-news-banner_section::after {
@@ -327,9 +332,38 @@ aside {
   left: -30%;
   right: -30%;
   height: 100%;
-  transform: skew(20deg);
+  transform: skew(0deg);
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.mt-news-banner_section .mt-news-slider_caption {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  margin: auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-news-banner_section .mt-news-slider_caption {
+    padding-left: 15px;
+  }
+}
+
+.mt-news-banner_section .mt-news-slider_caption .mt-main_title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 75px;
+  color: #ffffff;
+}
+
+.mt-news-banner_section .mt-news-slider_caption .mt-sub_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .breadcrumbs {
@@ -385,6 +419,12 @@ aside {
 @media only screen and (max-width: 550px) {
   .mt-page-menu .items .item {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .mt-page-menu .items .item {
+    font-size: 11px;
   }
 }
 
@@ -457,9 +497,14 @@ aside {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .mt-page-menu .items .item a .mt-light_bg {
+    font-size: 11px;
+  }
+}
+
 .mt-news-slider_section.mt-primary_bgr {
-  margin-top: 9rem;
-  position: relative;
+  margin-top: 0rem;
 }
 
 .mt-news-slider .mt-slider .mt-thumb {
@@ -472,7 +517,7 @@ aside {
 }
 
 .mt-news-slider .mt-slider .mt-post .mt-slider-content {
-  padding: 60px 0;
+  padding: 15px 0;
 }
 
 .mt-news-slider .mt-slider .mt-post .mt-slider-content p {
@@ -498,12 +543,11 @@ aside {
   font-size: 22px;
   line-height: 27px;
   text-transform: uppercase;
-  color: #fff;
-  align-items: center;
   color: #1f3a93;
+  align-items: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .mt-date {
     font-size: 20px;
     line-height: 24px;
@@ -537,6 +581,12 @@ aside {
   left: 0;
   z-index: -10;
   transform: skewX(-19deg);
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-date span {
+    margin-top: 0.8rem;
+  }
 }
 
 .mt-section-main_title {
@@ -583,7 +633,7 @@ aside {
   text-transform: uppercase;
   color: #1d2230;
   margin: 0;
-  color: #1f3a93;
+  color: #fff;
   line-height: 41px;
   text-transform: none;
 }
@@ -629,12 +679,12 @@ aside {
   font-weight: bold;
   width: 190px;
   height: 50px;
-  color: $blue;
-  border: 2px solid $blue;
+  color: #1f3a93;
+  border: 2px solid #1f3a93;
 }
 
 .mt-post .mt-btn.mt-btn_more:hover {
-  background-color: $blue;
+  background-color: #1f3a93;
   color: #fff;
   border: none;
 }
@@ -651,5 +701,27 @@ aside {
 @media only screen and (max-width: 991px) {
   .mt-card:last-child {
     display: none;
+  }
+}
+
+.mt-app_section:before {
+  background-color: #f2f2f2;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .mt-card {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mt-post {
+    padding-bottom: 30px;
   }
 }

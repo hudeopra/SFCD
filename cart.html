@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | San Fernando Club Deportivo</title>
+    <title>Cart | San Fernando Club Deportivo </title>
     <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -32,18 +32,21 @@
                     <ul
                         class="col-xl-6 col-lg-6 col-md-6 col-9 text-uppercase d-flex justify-content-end login-section ">
                         <li>
-                            <a href="#"> Cart</a>
+                            <a href="http://sfcd.961digital.com/cart.html
+                            "> Cart</a>
                         </li>
                         <li>
                             <a href="#"> My Account</a>
                         </li>
                         <li class="mt-shop d-flex">
-                            <a href="#">
+                            <a href="http://sfcd.961digital.com/shop.html
+                            ">
                                 Shop
                             </a>
                         </li>
                         <li>
-                            <a href="#"> Login</a>
+                            <a href="http://sfcd.961digital.com/login-register.html
+                            "> Login</a>
                         </li>
                     </ul>
                 </div>
@@ -54,7 +57,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-12 d-flex align-items-center justify-content-between">
                         <div class="mt-logo-section">
-                            <a href="index.html">
+                            <a href="http://sfcd.961digital.com/
+                            ">
                                 <img src="assets/img/logo.png" alt="SFCD Logo">
                             </a>
                         </div>
@@ -89,16 +93,21 @@
                             <!-- <div id="menu"><i class="fas fa-bars"></i></div> -->
                             <ul>
                                 <li>
-                                    <a href="index.html">Home</a></li>
-                                <li class="mt-active"><a href="#">Club</a></li>
-                                <li><a href="#">Team</a></li>
+                                    <a href="http://sfcd.961digital.com/">Home</a></li>
+                                <li><a href="#">Club</a></li>
+                                <li><a href="http://sfcd.961digital.com/team.html
+                                  ">Team</a></li>
                                 <li><a href="#">Media</a></li>
-                                <li><a href="#">Matches</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="http://sfcd.961digital.com/match.html
+                                  ">Matches</a></li>
+                                <li><a href="http://sfcd.961digital.com/news.html
+                                  ">News</a></li>
                                 <li><a href="#">TV</a></li>
                                 <li><a href="#">ACCREDITATIONS</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">FAQs</a></li>
+                                <li><a href="http://sfcd.961digital.com/contact.html
+                                  ">Contact</a></li>
+                                <li><a href="http://sfcd.961digital.com/FAQ's.html
+                                  ">FAQs</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -117,7 +126,7 @@
             <div class="container-lg">
                 <div class="row">
                     <div class="mt-news-slider_caption">
-                        <h1 class="mt-main_title">Checkout</h1>
+                        <h1 class="mt-main_title">Cart</h1>
                     </div>
                 </div>
             </div>
@@ -130,11 +139,12 @@
                 <div class="container-inner mt-small_padding container">
                     <ul class="items">
                         <li class="item home">
-                            <a href="index.html" title="Go to Home Page">
+                            <a href="http://sfcd.961digital.com/
+                            " title="Go to Home Page">
                                 Home </a>
                         </li>
                         <li class="item mt_page">
-                            <strong>Checkout</strong>
+                            <strong>Cart</strong>
                         </li>
                     </ul>
                 </div>
@@ -142,56 +152,137 @@
         </div>
         <!-- Breadcumbs Ends-->
     </header>
-    <main class="mt-shopping-page">
-        <section class="container">
+    <main class="mt-cart-page container mt-shopping-page pb-5">
+        <section class="row">
+            <div class="mt-item  col-12 col-lg-9">
+                <form class="woocommerce-cart-form row" method="post">
+                    <div class="mt-cart-items__heading col-12">
+                        <div class="row">
+                            <div class="mt-cart-items__title col-5">item</div>
+                            <div class="mt-cart-items__title col-2">Price</div>
+                            <div class="mt-cart-items__title col-2">Quantity</div>
+                            <div class="mt-cart-items__title col-3">Sub-total</div>
 
-            <div class="mt-page-menu mt-small_padding">
-                <div class="container-lg">
-                    <div class="row">
-                        <div class="container-inner">
-                            <ul class="items">
-                                <li class="item">
-                                    <a href=""><span class="mt-dark_bg">Shipping Address</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href=""><span class="mt-dark_bg"> Shipping Method</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href=""> <span class="mt-dark_bg"> Payment Method</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href=""><span class="mt-light_bg"> Order Summary</span></a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <form action="" class="checkout-form checkout-form__three col-12 col-md-6 mt-small_padding">
-                    <div class="row">
-                        <div class="col-12 radio">
-                            <input class="" type="radio" id="payment-method" name="payment-method" checked>
-                            <label for="bank-transfer">Credit Card</label>
-                            <p>Make your payment directly with your credit card. Please use your Order ID as the payment
-                                reference. Your order will not be shipped until the funds have cleared in our account.
-                            </p>
+                    <div class="mt-cart-items mt-cart-items__item col-12">
+                        <div class="row align-items-center">
+                            <div class="mt-cart-items__item--image col-2">
+                                <figure>
+                                    <img src="assets/img/item-img.png" alt="Product-image">
+                                </figure>
+                            </div>
+                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a
+                                    href="http://sfcd.961digital.com/product-detail.html
+                                    ">1st Team Temp
+                                    2019-2020
+                                    Sweatshirt</a></div>
+                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
+                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
+                                    class="text-center" style="max-width: 100%;">
+                            </div>
+                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
+                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="col-12 radio">
-                            <input class="" type="radio" id="cash-delivery" name="payment-method">
-                            <label for="cash-delivery">Cash on Delivery</label>
-                            <p class="">Pay with cash upon delivery.</p>
+                    </div>
+                    <div class="mt-cart-items mt-cart-items__item col-12">
+                        <div class="row align-items-center">
+                            <div class="mt-cart-items__item--image col-2">
+                                <figure>
+                                    <img src="assets/img/item-img.png" alt="Product-image">
+                                </figure>
+                            </div>
+                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a
+                                    href="http://sfcd.961digital.com/product-detail.html
+                                    ">1st Team Temp
+                                    2019-2020
+                                    Sweatshirt</a></div>
+                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
+                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
+                                    class="text-center" style="max-width: 100%;">
+                            </div>
+                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
+                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="col-12 radio">
-                            <input class="" type="radio" id="paypal" name="payment-method">
-                            <label for="paypal">Paypal</label>
-                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
-                        </div>
-                        <div class="col-4">
-                            <input type="submit" class="checkout-form__submit">
+                    </div>
+                    <div class="mt-cart-items mt-cart-items__item col-12">
+                        <div class="row align-items-center">
+                            <div class="mt-cart-items__item--image col-2">
+                                <figure>
+                                    <img src="assets/img/item-img.png" alt="Product-image">
+                                </figure>
+                            </div>
+                            <div class="mt-cart-items__item--product-name col-12 col-md-3"><a
+                                    href="http://sfcd.961digital.com/product-detail.html
+                                    ">1st Team Temp
+                                    2019-2020
+                                    Sweatshirt</a></div>
+                            <div class="mt-cart-items__item--price col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--quantity col-3 col-md-2">
+                                <input type="number" step="1" min="1" max="5" value="1" autocomplete="off"
+                                    class="text-center" style="max-width: 100%;">
+                            </div>
+                            <div class="mt-cart-items__item--sub-total col-3 col-md-2">$ 1.50</div>
+                            <div class="mt-cart-items__item--cancel col-3 col-md-1">
+                                <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                            </div>
                         </div>
                     </div>
                 </form>
+                <div class="cart-continue-update row justify-content-between">
+                    <div class=" cart-continue-update__continue col-12 col-sm-6 col-md-4">
+                        <a href="#">Continue Shopping</a>
+                    </div>
+                    <div class="cart-continue-update__update col-12 col-sm-6 col-md-4">
+                        <a href="#">Update Shopping Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-lg-3">
+                <div class="mt-cart-checkout">
+                    <h2>summary</h2>
+                    <div class="mt-cart-checkout__sub-total d-flex justify-content-between">
+                        <span class="mt-cart-checkout__left">Sub-total</span>
+                        <span class="mt-cart-checkout__right mt-cart-checkout__sub-total--amount">$4.50</span>
+                    </div>
+                    <div class="mt-cart-checkout__shipping d-flex justify-content-between">
+                        <span class="mt-cart-checkout__left">Shipping</span>
+                        <div class="mt-cart-checkout__right mt-cart-checkout__shipping--types">
+                            <div>
+                                <label for="flat-rate">Flat rate</label>
+                                <input type="radio" id="flat-rate" name="shipping-type" checked>
+                            </div>
+                            <div>
+                                <label for="free-shipping">Free shipping</label>
+                                <input type="radio" id="free-shipping" name="shipping-type">
+                            </div>
+                            <div>
+                                <label for="local-pickup">Local pickup</label>
+                                <input type="radio" id="local-pickup" name="shipping-type">
+                            </div>
+                            <p>Shipping options will be updated during checkout.</p>
+                            <a href="#">Calculate shipping</a>
+                        </div>
+                    </div>
+                    <div class="mt-cart-checkout__total d-flex justify-content-between">
+                        <span class="mt-cart-checkout__left">Total</span>
+                        <span class="mt-cart-checkout__right mt-cart-checkout__total--amount">$4.50</span>
+                    </div>
+                    <div class="mt-cart-checkout__btn">
+                        <a href="#">
+                            proceed to checkout
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -236,7 +327,8 @@
                         <div class="mt-footer_widget mb-3">
                             <ul>
                                 <li>
-                                    <a href="">Contact Us</a>
+                                    <a href="http://sfcd.961digital.com/contact.html
+                                    ">Contact Us</a>
                                 </li>
                                 <li>
                                     <a href="">Purchase</a>
@@ -270,35 +362,45 @@
                         <div class="mt-footer_widget mb-4">
                             <ul>
                                 <li>
-                                    <a href="">Kappa</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Kappa</a>
                                 </li>
                                 <li>
-                                    <a href="">Man / Boy</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Man / Boy</a>
                                 </li>
                                 <li>
-                                    <a href="">Woman</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Woman</a>
                                 </li>
                                 <li>
-                                    <a href="">Tracksuits</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Tracksuits</a>
                                 </li>
                                 <li>
-                                    <a href="">Sweatshirts</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Sweatshirts</a>
                                 </li>
                                 <li>
-                                    <a href="">Tshirts</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Tshirts</a>
                                 </li>
                                 <li>
-                                    <a href="">Pants
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Pants
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">Socks</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Socks</a>
                                 </li>
                                 <li>
-                                    <a href="">Merchandising</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Merchandising</a>
                                 </li>
                                 <li>
-                                    <a href="">Outlet</a>
+                                    <a href="http://sfcd.961digital.com/category.html
+                                    ">Outlet</a>
                                 </li>
                             </ul>
                         </div>

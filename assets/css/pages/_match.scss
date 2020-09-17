@@ -1,0 +1,271 @@
+
+.mt-match-scores {
+    margin-bottom: 30px;
+  }
+  
+  .mt-match-scores .mt-section_header .mt-section_title {
+    font-size: 30px;
+    line-height: 24px;
+    color: #1d2230;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #1d2230;
+    margin: 0;
+    color: #fff;
+  }
+  
+  .mt-match-scores .mt-section_header .mt-more {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: #1f3a93;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .mt-match-scores .mt-section_header .mt-more:hover {
+    color: #1d2230;
+  }
+  
+  .mt-match-scores .mt-section_header .mt-more:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 25px;
+    margin: 0 0.8rem;
+  }
+  
+  .mt-match-scores .mt-section_header .mt-more:hover {
+    color: #fff;
+  }
+  
+  .mt-match-scores .mt-section_header .mt-more:before {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .mt-match-scores .mt-score-section {
+      margin-top: 2rem;
+    }
+  }
+  
+  .mt-match-scores .mt-score_board {
+    padding: 0 15px;
+    height: calc(100% - 40px);
+  }
+  
+  .mt-match-scores .mt-score_board .mt-score-table {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 0.75fr 4fr (1fr)[5];
+        grid-template-columns: 0.5fr 0.75fr 4fr repeat(5, 1fr);
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 0;
+    grid-gap: 0px;
+    text-align: center;
+  }
+  
+  .mt-match-scores .mt-score_board .mt-score-table .mt-score {
+    color: #fff;
+  }
+  
+  .mt-match-scores .mt-score_board .mt-score-table .team {
+    text-align: left;
+  }
+  
+  .mt-match-scores .mt-score_board .head {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+  }
+  
+  .mt-match-scores .mt-score_board .border-btn {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .mt-match-scores .mt-score_board .border-btn:last-child {
+    border-bottom: none;
+  }
+  
+  .mt-match-scores .mt-score_board .mt-score-table {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 0.75fr 5fr 1fr;
+        grid-template-columns: 0.5fr 0.75fr 5fr 1fr;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 0;
+    grid-column-gap: 0.5rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .mt-match-history {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .mt-match-history .mt-section_header .mt-section_title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 24px;
+    color: #fff;
+  }
+  
+  .mt-match-history .mt-section_header .mt-more {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: #1f3a93;
+    color: #67ceee;
+  }
+  
+  .mt-match-history .mt-section_header .mt-more:hover {
+    color: #1d2230;
+  }
+  
+  .mt-match-history .mt-section_header .mt-more:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 25px;
+    margin: 0 0.8rem;
+  }
+  
+  .mt-match-history .mt-section_header .mt-more:hover {
+    color: #fff;
+  }
+  
+  .mt-match-history .mt-section_header .mt-more:before {
+    background: #67ceee;
+  }
+  
+  .mt-match-history .mt-blue_history .mt-post_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  
+  .mt-match-history .mt-blue_history p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 0;
+  }
+  
+  .table.table-borderless {
+    text-align: center;
+  }
+  
+  .border-bottom,
+  .border-0 {
+    border-bottom: 1px solid #e5e5e5 !important;
+  }
+  
+  .border-bottom .mt-sn,
+  .border-0 .mt-sn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1d2230;
+  }
+  
+  .border-bottom .mt-score,
+  .border-0 .mt-score {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .border-bottom:hover,
+  .border-0:hover {
+    background-color: transparent !important;
+  }
+  
+  .border-bottom:hover td,
+  .border-0:hover td {
+    color: #1f3a93;
+  }
+  
+  .border-bottom:hover th,
+  .border-0:hover th {
+    color: #1f3a93;
+  }
+  
+  .border-0 {
+    border-bottom: none !important;
+  }
+  
+  .border-bottom.mt-table_head:hover {
+    color: #1d2230;
+  }
+  
+  .border-bottom.mt-table_head td {
+    background: rgba(29, 34, 48, 0.2);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1d2230;
+    border: 8px solid #fff;
+    text-transform: uppercase;
+  }
+  
+  .border-bottom.mt-table_head th {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1d2230;
+  }
+  
+  .mt-equipment {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+  .mt-equipment img {
+    margin-right: 5px;
+  }
+  
+  .mt-match_slide {
+    padding-right: 30px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .mt-match_slide {
+      padding-right: 0;
+    }
+  }
+  
+  .mt-match_slide .mt-video_thumb img {
+    width: 100%;
+    height: 100%;
+  }

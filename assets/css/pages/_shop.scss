@@ -108,6 +108,7 @@
 .mt-shop-items{
     &__item{
         // item-hover-effect
+
     padding-bottom: 20px;
     }
     .mt-product{
@@ -161,8 +162,7 @@
         }
     }
 }
-.mt-shop-items__item 
-.mt-product{
+.mt-product.d-flex{
     padding-bottom: 20px;
     &:hover{
         transform: scale(1.025);
