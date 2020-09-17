@@ -5,3 +5,11 @@
 body {
     font-family: "Quicksand", sans-serif;
   }
+  a{
+    color:#1d2230;
+    &:hover{
+      color: #1d2230;
+      text-decoration: none;
+      opacity: 0.88;
+    }
+  }

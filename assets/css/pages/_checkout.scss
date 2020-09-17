@@ -1,0 +1,122 @@
+.checkout-form{
+    >.row > div{
+        padding-bottom: 8px;
+        &:last-of-type{
+            padding-bottom: 0;
+        }
+    }
+    h2{padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-size: 26px;
+        border-bottom: 1px solid gray;
+    }
+    label{
+        color:#5D625C;
+        font-weight: 700;
+        display: block;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    input, select, textarea{
+        height: 50px;
+        font-size: 18px;
+        text-transform: capitalize;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+        outline: none;
+        border: none;
+        box-shadow: 0 0 2px #a6a6a6;
+        color: #231916;
+    }
+    &__submit{
+        background-color: #1d2230;
+        color: #fff !important;
+        line-height: 2;
+        &:hover{
+            opacity: .9;
+        }
+    }
+    &__three{
+        margin-left: 15px;
+        margin-right: 15px;
+        .radio{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding-left: 20px;
+            position: relative;
+            >label{
+                padding-left: 15px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+                    height: 18px;
+                    width: 18px;
+                    border: 1px solid #1d2230;
+                    border-radius: 50%;
+                }
+                &:after{
+                    content: '';
+                    display: none;
+                    position: absolute;
+                    top: 10px;
+                    left: 5px;
+                    height: 8px;
+                    width: 8px;
+                    background-color: #1d2230;
+                    border-radius: 50%;
+                }
+                
+            }
+            
+        }
+        input:checked +  label:after{
+               display: inline-block;
+            }
+        input[type=radio]{
+            visibility: hidden;
+            position: absolute;
+            height: 30px;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            &:checked ~ .mt-payment-detail-content{
+                display: block;
+            }
+        }
+        div.mt-payment-detail-content{
+            display: none;
+            width: 100%;
+            img{
+                
+            margin-top: 15px;
+            }
+            label{
+                margin-top: 15px;
+                &:first-of-type{
+                    margin-top: 0;
+                }
+            }
+        }
+
+    }
+    &__four{
+        .confirm{
+            display: flex;
+            h3, p{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .row{
+                width:100%;
+            }
+        }
+    }
+}
+form.checkout-form{
+    padding-left: 15px;
+    padding-right: 15px;
+}

@@ -155,6 +155,9 @@
     }
     input{
         border: 0;
+        &:focus, &:visited{
+        outline: none;
+        }
     }
 }
 .mt-product-categories{

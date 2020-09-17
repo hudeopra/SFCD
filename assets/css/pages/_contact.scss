@@ -1,0 +1,30 @@
+.contact-form-wrapper{
+    iframe{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    textarea{
+        width: 100%;
+        min-height: 150px;
+    }
+}
+.contact-wrapper{
+    padding: 15px 10px;
+    background-color: $blue;
+    color: #fff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    height: 100%;
+    
+    line-break: anywhere;
+    h3{
+        font-size: 22px;
+        padding-bottom: 5px;
+        display: inline-block;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+    }
+    address{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+}

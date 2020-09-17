@@ -179,20 +179,59 @@
                     <div class="row">
                         <div class="col-12 radio">
                             <input class="" type="radio" id="payment-method" name="payment-method" checked>
-                            <label for="bank-transfer">Credit Card</label>
-                            <p>Make your payment directly with your credit card. Please use your Order ID as the payment
-                                reference. Your order will not be shipped until the funds have cleared in our account.
-                            </p>
+                            <label for="credit-card">Credit Card</label>
+                            <div class="mt-payment-detail-content">
+                                <p>Make your payment directly with your credit card. Please use your Order ID as the
+                                    payment
+                                    reference. Your order will not be shipped until the funds have cleared in our
+                                    account.</p>
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col-12 ">
+
+                                            <img src="assets/img/thumb-atm.png" alt="Atm Card">
+
+                                            <label for="card-number">Card Number</label>
+                                            <input type="text" id="card-number" maxlength="19" placeholder="Card Number"
+                                                required>
+                                        </div>
+                                        <div class="col-12 ">
+                                            <label for="name-on-card">Name on Card</label>
+                                            <input type="text" id="name-on-card" placeholder="Name on Card" required>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="col-6">
+                                                <label for="expiration-date">Expiration date</label>
+                                                <input type="text" id="expiration-date" maxlength="5"
+                                                    placeholder="MM/YY" required>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="cvv">CVV</label>
+                                                <input type="text" id="cvv" maxlength="4" placeholder="CVV" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
                         </div>
                         <div class="col-12 radio">
                             <input class="" type="radio" id="cash-delivery" name="payment-method">
                             <label for="cash-delivery">Cash on Delivery</label>
-                            <p class="">Pay with cash upon delivery.</p>
+                            <div class="mt-payment-detail-content">
+                                <p class="">Pay with cash upon delivery.</p>
+                            </div>
+
                         </div>
                         <div class="col-12 radio">
                             <input class="" type="radio" id="paypal" name="payment-method">
                             <label for="paypal">Paypal</label>
-                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                            <div class="mt-payment-detail-content">
+                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                                </p>
+                            </div>
+
                         </div>
                         <div class="col-4">
                             <input type="submit" class="checkout-form__submit">
