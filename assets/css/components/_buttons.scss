@@ -40,24 +40,15 @@
   
 .mt-latest_news .mt-post .mt-btn.mt-btn_more {
     border: 2px solid $white;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    font-size: 18px;
-    line-height: 22px;
     color: $white;
-    text-decoration: none !important;
     font-weight: bold;
     width: 190px;
     height: 50px;
   }
   
   .mt-latest_news .mt-post .mt-btn.mt-btn_more:hover {
-    background-color: $white;
-    color:$blue;
+    background-color: transparent;
+    color:#fff;
     border: none;
   }
   
@@ -71,6 +62,9 @@
   }
   .mt-scores .mt-score_board .border-btn {
     border-bottom: 1px solid #e5e5e5;
+    &:last-of-type{
+      border: 0;
+    }
   }
 
   .mt-product .mt-btn.mt-btn_cart {

@@ -2,13 +2,14 @@
     a:hover{
         text-decoration: none;
     }
-    .mt-page-menu .items .item a span{
-        
-    padding: 8px 15px;
-    }
     .mt-app_section{
         &:before{
             display: none;
+        }
+    }
+    .mt-shop-banner {
+        .mt-product_title{
+            font-size: 0;
         }
     }
 .slider-for.slider.slick-initialized.slick-slider,
@@ -44,9 +45,6 @@
     flex: 0 0 25%;
     max-width: 25%;
 }
-.mt-shop-banner:hover .mt-banner_thumb img.mt-thumb {
-    left: -21%;
-}
 .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-thumb,
 .mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-thumb,
 .mt-shop-banner:hover .mt-banner_thumb:hover img.mt-thumb {
@@ -63,7 +61,7 @@
     opacity: 1;
     top: 0;
     top: auto;
-    left: 12%;
+    left: 30%;
     bottom: -30px;
 }
 .mt-banner_section .mt-slider_caption{
@@ -76,9 +74,22 @@
     width: auto;
 }
 .mt-shop-banner .mt-banner_thumb img.mt-thumb{
-    width: 155%;
+    width: 175%;
 }
-
+.mt-banner_section .mt-banner_thumb img.mt-thumb {
+    width: 161% !important;
+}
+.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
+.mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
+display: none;
+  }
+  .mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+  .mt-shop-banner .hover-display:hover .mt-slider_caption{
+      display: inline !important;
+      opacity: 1 !important;
+      transition: all 0.3s ease-in-out 0.3s;
+  }
 @media only screen and (max-width: 1599px){
     .mt-banner_section .mt-banner_thumb img.mt-thumb {
         left: -75px;
@@ -95,13 +106,10 @@
 //   shop items
 .mt-shop-items{
     &__item{
-        // item-hover-effect
 
-    padding-bottom: 20px;
+    >div{
+        margin-bottom: 10px;
     }
-    .mt-product{
-        margin: 0;
-        padding: 0;
     }
 }
 // shop pagination
@@ -114,7 +122,8 @@
     }
     &__pages--page, &__arrow{
         color: #fff;
-        
+        width: 35px;
+        height: 35px;
         background-color: #d4d4d4;
         margin-left: 5px;
         &:hover{
@@ -130,7 +139,7 @@
         text-align: center;
         a{
             display: inline-block;
-            width:25px;
+            padding: 5px;
             &:hover{
                 text-decoration: none;
             }
@@ -146,89 +155,14 @@
         font-size: 0;
         .fa{
             font-size: 16px;
-            padding: 4px 6px
+            padding: 9px 11px
         }
     }
 }
-.mt-product.d-flex{
-    padding-bottom: 20px;
-    &:hover{
-        transform: scale(1.025);
-        box-shadow:0 0 2px rgba(0, 0, 0, 0.2);
-        transition:  all .5s;
-    }
-}
+
 ul{
     list-style: none;
 }
-
-// login-register
-.mt-login-register{
-    height: 100%;
-    border-radius: 50px;
-    label {
-        color: #5D625C;
-        font-weight: 700;
-        display: block;
-        font-size: 18px;
-        text-transform: capitalize;
-    }
-    form{
-    height: 100%;
-
-    }
-    &__login{
-    padding: 45px 30px;
-        background-color: $blue;
-    color: #fff;
-    label{
-        color: #fff ;
-    }
-    }
-    &__register{
-        padding: 45px 30px;
-
-        background-color: rgba(0, 0, 0, 0.1);
-        color: #231916;
-        input[type=submit]:hover{
-            
-            color: #231916 !important;
-        }
-        
-    }
-    &--title{
-        margin-bottom: 20px;
-    }
-    .mt-input{
-        width: 100%;
-        height: 40px;
-        margin-bottom: 15px;
-        padding-left: 10px;
-    }
-    input[type=submit]{
-        width: 100%;
-        max-width: 300px;
-        height: 40px;
-        color:#fff;
-        font-weight: 600;
-        outline: none;
-        border:0;
-        background-color: #231916;
-        &:hover{
-            border:3px solid #231916;
-            background-color: transparent;
-            
-        }
-    }
-     
-    a{
-        color: #fff;
-        &:hover{
-            opacity: .5;
-        }
-    }
-}
-
 // FAQS
 #accordion .card {
     margin-bottom: 10px;
@@ -279,5 +213,16 @@ ul{
 @media screen and (max-width:767px){
     .contact-page ~ .mt-footer >div > div>div:first-of-type{
         display: none;
+    }
+}
+
+@media screen and (max-width:767px){
+    .mt-login-register input[type=submit]{
+    max-width: 100%;
+    }
+}
+@media screen and (max-width:375px){
+    mt-number-picker{
+    max-width: 100%;
     }
 }

@@ -4,22 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout | San Fernando Club Deportivo</title>
+    <title>Checkout | San Fernando Club Deportivo </title>
     <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
     <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/shop.css">
-    <link rel="stylesheet" href="assets/css/news.css">
 
 </head>
 
 <body>
     <header>
         <div class="topHeader">
-            <div class="container sideHeader ">
+            <div class="container-lg sideHeader ">
                 <div class="row">
                     <ul class="col-xl-6 col-lg-6 col-md-6 col-2 d-flex mt-contact">
                         <li>
@@ -53,7 +51,7 @@
             </div>
         </div>
         <div class="mainHeader">
-            <div class="container py-1">
+            <div class="container-lg py-1">
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-12 d-flex align-items-center justify-content-between">
                         <div class="mt-logo-section">
@@ -116,12 +114,12 @@
         <div class="mt-news-banner_section">
             <div class="mt-left_edge"></div>
             <div class="mt-news_thumb">
-                <img src="assets/img/shop-banner.png" alt="banner pic 4" class="mt-thumb">
+                <img src="assets/img/banner-2.jpg" alt="banner pic 2" class="mt-thumb">
             </div>
-            <div class="container">
+            <div class="container-lg">
                 <div class="row">
                     <div class="mt-news-slider_caption">
-                        <h1 class="mt-main_title">Checkout</h1>
+                        <h1 class="mt-main_title">Club</h1>
                     </div>
                 </div>
             </div>
@@ -130,7 +128,7 @@
 
         <!-- Breadcumbs Starts-->
         <div class="breadcrumbs">
-            <div class="container">
+            <div class="container-lg">
                 <div class="container-inner mt-small_padding container">
                     <ul class="items">
                         <li class="item home">
@@ -138,7 +136,7 @@
                                 Home </a>
                         </li>
                         <li class="item mt_page">
-                            <strong>Checkout</strong>
+                            <strong>Club</strong>
                         </li>
                     </ul>
                 </div>
@@ -146,108 +144,269 @@
         </div>
         <!-- Breadcumbs Ends-->
     </header>
-    <main class="mt-shopping-page">
-        <section class="container">
-
-            <div class="mt-page-menu mt-small_padding pt-0">
-                <div class="container">
-                    <div class="row">
-                        <div class="container-inner">
-                            <ul class="items flex-wrap">
-                                <li class="item">
-                                    <a href="http://sfcd.961digital.com/shipping-address.html"><span
-                                            class="mt-dark_bg">Shipping Address</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href="http://sfcd.961digital.com/shipping-method.html"><span class="mt-dark_bg">
-                                            Shipping Method</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href="http://sfcd.961digital.com/payment-method.html"> <span class="mt-dark_bg">
-                                            Payment Method</span></a>
-                                </li>
-                                <li class="item">
-                                    <a href="http://sfcd.961digital.com/order-summary.html"><span class="mt-light_bg">
-                                            Order Summary</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <main class="mt-club-page container">
+        <div class="row">
+            <section class="mt-org-chart col-12 col-lg-8">
+                <div class="mt-club-discription">
+                    <h2>SFCD | ORGANIGRAMA</h2>
+                    <p>Tras la dimisión de la Presidenta María de los Ángeles Carrillo Aparicio en 
+                    la Asamblea de Socios celebrada el 16 de mayo de 2019 y la posterior convocatoria de elecciones, 
+                    la actual Junta Directiva la componen:</p>
                 </div>
-            </div>
-            <div class="row">
-                <form action="" class="checkout-form checkout-form__three col-11 mt-small_padding pt-0">
-                    <div class="row">
-                        <div class="col-12 col-md-8 radio">
-                            <input class="" type="radio" id="payment-method" name="payment-method" checked>
-                            <label for="credit-card">Credit Card</label>
-                            <div class="mt-payment-detail-content">
-                                <p>Make your payment directly with your credit card. Please use your Order ID as the
-                                    payment
-                                    reference. Your order will not be shipped until the funds have cleared in our
-                                    account.</p>
-                                <form action="">
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 ">
-
-                                            <img src="assets/img/thumb-atm.png" alt="Atm Card">
-
-                                            <label for="card-number">Card Number<span>*</span></label>
-                                            <input type="text" id="card-number" maxlength="19" placeholder="Card Number"
-                                                required>
-                                        </div>
-                                        <div class="col-12 col-md-8 ">
-                                            <label for="name-on-card">Name on Card<span>*</span></label>
-                                            <input type="text" id="name-on-card" placeholder="Name on Card" required>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-
-                                            <div class="col-7">
-                                                <label for="expiration-date">Expiration date<span>*</span></label>
-                                                <input type="text" id="expiration-date" maxlength="5"
-                                                    placeholder="MM/YY" required>
-                                            </div>
-                                            <div class="col-5">
-                                                <label for="cvv">CVV<span>*</span></label>
-                                                <input type="text" id="cvv" maxlength="4" placeholder="CVV" required>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="col-12 radio">
-                            <input class="" type="radio" id="cash-delivery" name="payment-method">
-                            <label for="cash-delivery">Cash on Delivery</label>
-                            <div class="mt-payment-detail-content">
-                                <p class="">Pay with cash upon delivery.</p>
-                            </div>
-
-                        </div>
-                        <div class="col-12 radio">
-                            <input class="" type="radio" id="paypal" name="payment-method">
-                            <label for="paypal">Paypal</label>
-                            <div class="mt-payment-detail-content">
-                                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
-                                </p>
-                            </div>
-
-                        </div>
+                <div class="mt-club mt-medium_padding">
+                    
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                presidente
+                            </h4>
                             
-                        <div class="col -12 col-md-2 " style="margin-top: 16px;">
-                            <input type="submit" class="checkout-form__submit">
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                MANUEL GÓMEZ FONTAO
+                            </p>
                         </div>
                     </div>
-                </form>
-            </div>
-        </section>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                VICEPRESIDENTE
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                DAVID PÉREZ GIL
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                SECRETARIO
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                JUAN GARCÍA ESPINOSA DE LOS MONTEROS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                TESORERO
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                PEDRO LEÓN MELÉNDEZ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                PROTOCOLO Y AYUDANTE DE GESTIÓN
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                JAVIER ANASTASIO LLORCA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                VOCAL
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                MARÍA DE LOS ÁNGELES CARRILLO APARICIO
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                VOCAL
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                MANUEL GÓMEZ RUIZ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                DELEGADO 1º EQUIPO
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                JOSE MARÍA SANTOS BONET
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                DIRECTOR DEPORTIVO
+
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                ALBERTO ACHIRICA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mt-club-card">
+                            <h4 class="mt-club-card__post-title">
+                                TEAM MANAGER
+                            </h4>
+                            
+                            <figure class="mt-club-card__img">
+                            <img src="/assets/img/thumb-team-1.png" alt="img">
+                            </figure>
+                            <p class="mt-club-card__post-name">
+                                TEAM MANAGER
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <h3 class="mt-responsibilities-main-title">A ELLOS HAY QUE UNIR LAS SIGUIENTES RESPONSABILIDADES:</h3>
+                        <div class="mt-responsibilities row">
+                            <h4 class="mt-responsibilities__title">COORDINADOR CANTERA</h4>
+                            <p class="mt-responsibilities__name">PACO MARTÍNEZ</p>
+                        </div>
+                        <div class="mt-responsibilities">
+                            <h4 class="mt-responsibilities__title">SECRETARÍA Y ADMINISTRACIÓN</h4>
+                            <p class="mt-responsibilities__name">JUAN MANUEL ORTIZ PUERTA</p>
+                            <p class="mt-responsibilities__name">ISABEL MARÍA CLAVAÍN JIMÉNEZ</p>
+                            <p class="mt-responsibilities__name">FRANCISCO RIVERO CANTALOBA</p>
+                        </div>
+                        <div class="mt-responsibilities">
+                            <h4 class="mt-responsibilities__title">JEFE DE PRENSA</h4>
+                            <p class="mt-responsibilities__name">JESÚS MAYONE</p>
+                        </div>
+                        <div class="mt-responsibilities">
+                            <h4 class="mt-responsibilities__title">DISEÑO Y GESTIÓN WEB</h4>
+                            <p class="mt-responsibilities__name">MANUEL GÓMEZ RUIZ</p>
+                        </div>
+                        <div class="mt-responsibilities">
+                            <h4 class="mt-responsibilities__title">FOTÓGRAFO</h4>
+                            <p class="mt-responsibilities__name">ANTONIO QUINTERO BOZO</p>
+                        </div>
+                        <div class="mt-responsibilities">
+                            <h4 class="mt-responsibilities__title">COLABORADORES</h4>
+                            <p class="mt-responsibilities__name">BLAS ANTONIO MORENO GUERRERO</p>
+                            <p class="mt-responsibilities__name">PEDRO RAMÍREZ SÁNCHEZ</p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+            <section class="aside col-12 col-lg-4">
+                <h3>SFCD | CLASIFICACIÓN</h3>
+                <table class="table table-borderless">
+                    <thead>
+                      <tr class="border-bottom mt-table_head">
+                        <td scope="col ">POS</th>
+                        <td scope="col-6 text-left">Equipment</th>
+                        <td scope="col">PJ</th>
+                        <td scope="col">G</th>
+                        <td scope="col">E</th>
+                        <td scope="col">P</th>
+                        <td scope="col">PTS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-bottom">
+                        <th scope="row mt-sn">1</th>
+                        <td class="text-left mt-equipment">
+                          <img src="/assets/img/thumb-table-2.png" alt="logo" srcset="">
+                          Marbella</td>
+                        <td class="mt-score">38</td>
+                        <td class="mt-score">20</td>
+                        <td class="mt-score">11</td>
+                        <td class="mt-score">7</td>
+                        <td class="mt-score">51</td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <th scope="row mt-sn">2</th>
+                        <td class="text-left mt-equipment">
+                          <img src="/assets/img/team-2.jpg" alt="logo" srcset="">Marino</td>
+                        <td class="mt-score">38</td>
+                        <td class="mt-score">20</td>
+                        <td class="mt-score">11</td>
+                        <td class="mt-score">7</td>
+                        <td class="mt-score">51</td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <th scope="row mt-sn">3</th>
+                        <td class="text-left mt-equipment">
+                          <img src="/assets/img/team-3.jpg" alt="logo" srcset="">
+                          Recreativo</td>
+                        <td class="mt-score">38</td>
+                        <td class="mt-score">20</td>
+                        <td class="mt-score">11</td>
+                        <td class="mt-score">7</td>
+                        <td class="mt-score">51</td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <th scope="row mt-sn">4</th>
+                        <td class="text-left mt-equipment"><img src="/assets/img/thumb-score-2.png" alt="logo" srcset="">San Fernando</td>
+                        <td class="mt-score">38</td>
+                        <td class="mt-score">20</td>
+                        <td class="mt-score">11</td>
+                        <td class="mt-score">7</td>
+                        <td class="mt-score">51</td>
+                      </tr>
+                      <tr class="border-bottom">
+                        <th scope="row mt-sn">5</th>
+                        <td class="text-left mt-equipment">
+                          <img src="/assets/img/team-5.jpg" alt="logo" srcset="">
+                          Tamaraceite</td>
+                        <td class="mt-score">38</td>
+                        <td class="mt-score">20</td>
+                        <td class="mt-score">11</td>
+                        <td class="mt-score">7</td>
+                        <td class="mt-score">51</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </section>
+        </div>
     </main>
 
     <!-- footer-section starts here -->
     <footer class="mt-footer mt-dark_bgr mt-small_padding">
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <aside class="mt-footer_widget">
@@ -405,11 +564,11 @@
         </div>
     </footer>
     <!-- footer section ends here -->
-    <div class="container copyright py-1">
-        <div class=" col-8 col-md-6 cpy-date">
+    <div class="container-lg copyright py-1">
+        <div class=" col-10 col-md-6 cpy-date">
             © 2020 SAN FERNANDO CD
         </div>
-        <div class="col-4 col-md-6 d-flex justify-content-end cpy-atm">
+        <div class="col-2 col-md-6 d-flex justify-content-end cpy-atm">
             <a href="">
                 <img src="assets/img/thumb-atm.png" alt="Atm Card">
             </a>

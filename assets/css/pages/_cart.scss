@@ -38,6 +38,9 @@
             font-weight: bold;
         }
     }
+    .fa{
+        opacity: .4;
+    }
 }
 .mt-cart-checkout{
     background: rgba(31, 58, 147, 0.1);
@@ -49,7 +52,7 @@
     }
     h2, > div{
         border-bottom: 1px solid rgba(0, 0, 0, .1);
-        padding: 10px;
+        padding: 5px 15px;
         margin-bottom: 5px;
         
     }
@@ -65,11 +68,13 @@
         color: #fff;
         background-color: $blue;
         font-size: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
     &__btn{
         text-align: center;
         display: block;
-        padding: 5px 10px;
+        padding: 10px !important;
         background-color: #1D2230;
         border-radius: 2px;
         text-transform: capitalize;

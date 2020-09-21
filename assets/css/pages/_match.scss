@@ -6,9 +6,6 @@
   .mt-match-scores .mt-section_header .mt-section_title {
     font-size: 30px;
     line-height: 24px;
-    color: #1d2230;
-    font-weight: normal;
-    display: flex;
     align-items: center;
     text-transform: uppercase;
     color: #1d2230;
@@ -17,13 +14,6 @@
   }
   
   .mt-match-scores .mt-section_header .mt-more {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    position: relative;
-    padding-left: 1.5rem;
-    text-decoration: none;
-    color: #1f3a93;
     color: rgba(255, 255, 255, 0.4);
   }
   
@@ -55,12 +45,9 @@
       margin-top: 2rem;
     }
   }
-  
-  .mt-match-scores .mt-score_board {
-    padding: 0 15px;
-    height: calc(100% - 40px);
+  .mt-match-scores .mt-section_header ~ .mt-score_board{
+    margin-top:-38px;
   }
-  
   .mt-match-scores .mt-score_board .mt-score-table {
     display: -ms-grid;
     display: grid;
@@ -112,58 +99,42 @@
   }
   
   .mt-match-history {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    .mt-section_header {
+      > h2, > .mt-more{
+        color: #fff;
+      }
+      .mt-more{
+        &:hover {
+          
+        color: #fff;
+        }
+        :before {
+          content: "";
+          background: rgba(0, 0, 0, 0.2);
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 2px;
+          height: 25px;
+          margin: 0 0.8rem;
+        }
+    
+      }
+    }
+    
   }
   
-  .mt-match-history .mt-section_header .mt-section_title {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 24px;
-    color: #fff;
-  }
-  
-  .mt-match-history .mt-section_header .mt-more {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    position: relative;
-    padding-left: 1.5rem;
-    text-decoration: none;
-    color: #1f3a93;
-    color: #67ceee;
-  }
-  
-  .mt-match-history .mt-section_header .mt-more:hover {
-    color: #1d2230;
-  }
-  
-  .mt-match-history .mt-section_header .mt-more:before {
-    content: "";
-    background: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 2px;
-    height: 25px;
-    margin: 0 0.8rem;
-  }
-  
-  .mt-match-history .mt-section_header .mt-more:hover {
-    color: #fff;
-  }
-  
-  .mt-match-history .mt-section_header .mt-more:before {
-    background: #67ceee;
-  }
   
   .mt-match-history .mt-blue_history .mt-post_title {
-    font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
+    a{
+      
+    color: #ffffff;
+    }
   }
   
   .mt-match-history .mt-blue_history p {
@@ -269,3 +240,9 @@
     width: 100%;
     height: 100%;
   }
+
+@media only screen and (max-width: 991px) {
+  .mt-match_video_section ~ .mt-app_section {
+    margin-top: 0;
+}
+}

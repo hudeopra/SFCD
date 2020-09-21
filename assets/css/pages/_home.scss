@@ -1,4 +1,3 @@
-
 .mt-large_padding {
   padding: 6rem 0 4rem 0;
 }
@@ -10,6 +9,13 @@
 @media only screen and (max-width: 767px) {
   .mt-medium_padding {
     padding: 30px 0;
+  }
+  .mt-match-history .mt-blue_history .mt-post_title{
+    margin-top: 10px;
+  }
+  .slick-slider button,
+  .mt-match-video-slider button{
+    display: none !important;
   }
 }
 
@@ -33,7 +39,15 @@
     padding-bottom: 30px;
   }
 }
-
+ .before.mt-app_section:before {
+  background-color: #f2f2f2;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: -100px;
+}
 
 
 .mt-light_bgr {
@@ -42,6 +56,7 @@
 
 .mt-primary_bgr {
   background: $blue;
+  color: #fff;
 }
 
 .mt-secondary_bgr {
@@ -57,15 +72,9 @@
   height: auto;
 }
 
-
 .mt-dark_bgr {
   background-color: #1d2230;
 }
-
-
-
-
-
 
 .mt-section_header {
   margin: 1rem 0 1.5rem 0;
@@ -129,12 +138,12 @@
   margin-top: 6rem;
 }
 
-.mt-container_margin .container-lg {
+.mt-container_margin .container {
   margin-top: -12rem;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-container_margin .container-lg {
+  .mt-container_margin .container {
     margin-top: -8rem;
   }
 }
@@ -206,7 +215,7 @@ figure {
 
 
 .mt-match .mt-previous-matches .mt-matches-card {
-  padding: 30px 45px 30px 30px;
+  padding: 30px 45px;
   border-right: 1px dashed rgba(255, 255, 255, 0.3);
   display: -ms-grid;
   display: grid;
@@ -220,49 +229,36 @@ figure {
 }
 
 .mt-match .mt-previous-matches .mt-matches-card .mt-date {
-  display: flex;
-  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: $white;
 }
 
 .mt-match .mt-previous-matches .mt-matches-card .mt-date span {
-  position: relative;
-  margin-right: 0.8em;
-  padding: 0.5rem;
   width: auto;
   height: 25px;
   z-index: 10;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 14px;
 }
 
 .mt-match .mt-previous-matches .mt-matches-card .mt-date span::after {
-  position: absolute;
+
   background: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  height: 100%;
-  content: "";
-  left: 0;
-  z-index: -10;
-  transform: skewX(-19deg);
 }
 
 .mt-match .mt-previous-matches .mt-matches-card .mt-team {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 30px;
   color: $white;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
-
+.mt-team, .mt-score{
+  font-size: 16px;
+}
 @media only screen and (max-width: 767px) {
   .mt-match .mt-previous-matches .mt-matches-card {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
@@ -271,7 +267,7 @@ figure {
 
 .mt-match .mt-upcoming-card {
   color: $white;
-  padding: 30px;
+  padding: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3 repeat, 1fr;
@@ -299,7 +295,7 @@ figure {
   height: 25px;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 27px;
   z-index: 10;
   display: flex;
@@ -344,7 +340,7 @@ figure {
 }
 
 .mt-match .mt-upcoming-card .mt-round {
-  font-size: 19px;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: left;
 }
@@ -359,16 +355,6 @@ figure {
   .mt-match {
     flex-direction: column;
   }
-}
-
-.mt-latest_news .mt-section_header .mt-more {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  padding-left: 1.5rem;
-  text-decoration: none;
-  color:$blue;
 }
 
 .mt-latest_news .mt-section_header .mt-more:hover {
@@ -396,19 +382,14 @@ figure {
 }
 
 .mt-latest_news .mt-post .mt-post_title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
   color: #1d2230;
   color: $white;
-  min-height: 60px;
+  margin: 0;
 }
 
 .mt-latest_news .mt-post p {
-  font-size: 16px;
-  line-height: 24px;
   color: $white;
-  padding: 1rem 0;
+  padding: 1rem 0 1.5rem;
 }
 
 .mt-scores {
@@ -416,14 +397,14 @@ figure {
   position: relative;
 }
 
-.mt-scores .container-lg {
+.mt-scores .container {
   margin-bottom: -10rem;
   position: relative;
   z-index: 10;
 }
 
 @media only screen and (max-width: 767px) {
-  .mt-scores .container-lg {
+  .mt-scores .container {
     margin-bottom: -6rem;
   }
 }
@@ -439,26 +420,10 @@ figure {
 }
 
 .mt-scores .mt-section_header .mt-section_title {
-  font-size: 30px;
-  line-height: 24px;
-  color: #1d2230;
-  font-weight: normal;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #1d2230;
-  margin: 0;
   color: $white;
 }
 
 .mt-scores .mt-section_header .mt-more {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  padding-left: 1.5rem;
-  text-decoration: none;
-  color: $blue;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -569,13 +534,6 @@ figure {
 }
 
 .mt-tv_section .mt-section_header .mt-more {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  position: relative;
-  padding-left: 1.5rem;
-  text-decoration: none;
-  color: $blue;
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -614,8 +572,7 @@ figure {
 .mt-tv_section .mt-video_thumb img {
   width: 100%;
 }
-
-.mt-club_section {
+.mt-club_section  {
   margin-top: 60px;
 }
 
@@ -646,9 +603,19 @@ figure {
   font-size: 24px;
   line-height: 30px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 30px;
 }
-
+.mt-product.d-flex{
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  &:hover{
+      transform: scale(1.025);
+      box-shadow:0 0 2px rgba(0, 0, 0, 0.2);
+      transition:  all .5s;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+  }
+}
 .mt-product .mt-price {
   font-weight: 500;
   font-size: 16px;
@@ -829,7 +796,6 @@ figure {
 
 @media (min-width: 1600px) {
   .container,
-  .container-lg,
   .container-md,
   .container-sm,
   .container-xl {
@@ -839,11 +805,23 @@ figure {
 
 .mt-blue_history {
   margin-bottom: 30px;
-}
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+  .mt-read_more{
+    display: inline-block;
+    margin-top: 18px;
+  }
 
+}
+@media screen and (max-width:575px){
+  .mt-blue_history .mt-post_title{
+    margin-top: 10px;
+  }
+}
 .mt-blue_history img {
   width: 100%;
-  height: 170px;
+  max-height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -858,20 +836,6 @@ figure {
   overflow: hidden;
 }
 
-
-.mt-medium_padding {
-  padding: 60px 0;
-}
-
-@media only screen and (max-width: 767px) {
-  .mt-medium_padding {
-    padding: 30px 0;
-  }
-}
-
-.mt-read_more {
-  padding-left: 16px;
-}
 
 .mt-read_more:after {
   font-family: "FontAwesome";
@@ -921,8 +885,8 @@ figure {
 .mt-blue_history .mt-post_title {
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 1.2;
   color: #000000;
 }
 
@@ -933,8 +897,6 @@ figure {
 
 .mt-app_section .mt-app_thumb {
   margin-top: -130px;
-  max-width: 650px;
-  position: relative;
 }
 
 .mt-app_section .mt-app_thumb::after {
@@ -991,6 +953,7 @@ figure {
     left: 100px;
     width: 150px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -1011,4 +974,24 @@ figure {
   }
 }
 
+footer address a{
+  color:#fff ;
+}
+table{
+  overflow: scroll;
+}
 
+@media screen and (max-width:991px){
+  .mt-app_section{
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width:425px){
+  .mt-news-banner_section .mt-news-slider_caption .mt-main_title{
+    font-size: 32px !important;
+  }
+}
+#accordion .card button {
+  
+  padding-right: 30px;
+}

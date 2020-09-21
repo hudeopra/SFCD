@@ -6,11 +6,6 @@
     padding-left: 15px;
   }
   
-  .topHeader .sideHeader .mt-contact {
-    margin: 0;
-    padding: 0;
-  }
-  
   .topHeader .sideHeader .mt-contact li {
     list-style: none;
     padding-right: 0.8rem;
@@ -18,8 +13,7 @@
   
   .topHeader .sideHeader .mt-contact .email {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
     color: #fff;
     list-style: none;
     text-decoration: none;
@@ -48,8 +42,7 @@
   
   .topHeader .sideHeader .mt-contact .number {
     font-weight: normal;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
     color: #fff;
     text-decoration: none;
   }
@@ -75,12 +68,6 @@
     color: #fff;
   }
   
-  @media only screen and (max-width: 991px) {
-    .topHeader .sideHeader .mt-contact .number span {
-      display: none;
-    }
-  }
-  
   .topHeader .login-section li {
     list-style: none;
     padding: 0 0.4rem;
@@ -103,11 +90,6 @@
     margin-right: 0.6rem;
   }
   
-  @media only screen and (max-width: 991px) {
-    .topHeader .login-section .mt-shop {
-      display: none;
-    }
-  }
   
   .topHeader .login-section .mt-shop a {
     width: 100px;
@@ -289,7 +271,9 @@
   .mainHeader #mainnav ul li a:hover {
     color: #fff;
   }
-  
+  .mt-logo-section{
+    max-width: 250px;
+  }
   @media only screen and (min-width: 1600px) {
     .mainHeader #mainnav ul li a {
       padding: 1rem;
@@ -338,6 +322,7 @@
   
   .mainHeader .mt-menu-section .mt-add li img {
     transform: skewX(-19deg);
+    max-height: 48px;
   }
   
   @media only screen and (max-width: 991px) {
@@ -347,9 +332,14 @@
   }
   
   @media only screen and (max-width: 991px) {
+    .topHeader .login-section .mt-shop {
+      display: none !important;
+    }
+  }
+  @media only screen and (max-width: 991px) {
     .mainHeader .mt-menu-section #mainnav {
       display: none;
-      min-height: 100vh;
+      height: 100vh;
       background: #1d2230;
       max-width: 100%;
       position: absolute;

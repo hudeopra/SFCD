@@ -45,7 +45,7 @@
   }
   
   .mt-footer .mt-footer_widget ul li a:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
   }
   
   .mt-footer .mt-footer_widget .mt-social-icons li {
@@ -80,15 +80,43 @@ aside.mt-footer_widget {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .cpy-date {
+      font-size: 14px;
+      line-height: 20px;
+      color: #444444;
+      display: flex;
+      align-items: center;
+    }
+    .cpy-atm a{
+      height: 30px;
+      overflow: hidden;
+    }
+  }
+  @media screen and (max-width:991px){
+    .mt-app_section .mt-app_thumb img{
+      
+    position: absolute;
+    left: -10%;
+    }
   }
   
-  .copyright .cpy-date {
-    font-size: 16px;
-    line-height: 20px;
-    color: #444444;
+  @media screen and (max-width:767px){
+    
+  .mt-app_section .mt-app_thumb img{
+    left: 0%;
   }
-  
-  .copyright .cpy-atm a img {
-    max-width: 40px;
-  }
-  
+  } 
+  @media screen and (max-width:425px){
+    
+    .copyright {
+      > div ,a{ 
+        min-width: 100%;
+      justify-content: center;
+      }
+      a{
+        display: flex;
+        margin-top: 5px;
+        width: 100%;
+      }
+    }
+    }

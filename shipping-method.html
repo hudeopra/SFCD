@@ -19,9 +19,9 @@
 <body>
     <header>
         <div class="topHeader">
-            <div class="container-lg sideHeader ">
+            <div class="container sideHeader ">
                 <div class="row">
-                    <ul class="col-xl-6 col-lg-6 col-md-6 col-3 d-flex mt-contact">
+                    <ul class="col-xl-6 col-lg-6 col-md-6 col-2 d-flex mt-contact">
                         <li>
                             <a class="email" href=""><span>sanfernandoclubdeportivo@live.com</span></a>
                         </li>
@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                     <ul
-                        class="col-xl-6 col-lg-6 col-md-6 col-9 text-uppercase d-flex justify-content-end login-section ">
+                        class="col-xl-6 col-lg-6 col-md-6 col-10 text-uppercase d-flex justify-content-end login-section ">
                         <li>
                             <a href="http://sfcd.961digital.com/cart.html
                             "> Cart</a>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="mainHeader">
-            <div class="container-lg py-1">
+            <div class="container py-1">
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-12 d-flex align-items-center justify-content-between">
                         <div class="mt-logo-section">
@@ -66,7 +66,8 @@
                                 <!-- <li>
                 </li> -->
                                 <li class="text-uppercase mt-shop">
-                                    <a class="text-decoration-none" href="">Shop</a>
+                                    <a class="text-decoration-none" href="http://sfcd.961digital.com/shop.html
+                                    ">Shop</a>
                                 </li>
                                 <li class="text-uppercase mt-bars">
                                     <a class="nav-toggle text-decoration-none">
@@ -117,7 +118,7 @@
             <div class="mt-news_thumb">
                 <img src="assets/img/shop-banner.png" alt="banner pic 4" class="mt-thumb">
             </div>
-            <div class="container-lg">
+            <div class="container">
                 <div class="row">
                     <div class="mt-news-slider_caption">
                         <h1 class="mt-main_title">Checkout</h1>
@@ -129,7 +130,7 @@
 
         <!-- Breadcumbs Starts-->
         <div class="breadcrumbs">
-            <div class="container-lg">
+            <div class="container">
                 <div class="container-inner mt-small_padding container">
                     <ul class="items">
                         <li class="item home">
@@ -148,11 +149,11 @@
     <main class="mt-shopping-page">
         <section class="container">
 
-            <div class="mt-page-menu mt-small_padding">
-                <div class="container-lg">
+            <div class="mt-page-menu mt-small_padding pt-0">
+                <div class="container">
                     <div class="row">
                         <div class="container-inner">
-                            <ul class="items">
+                            <ul class="items flex-wrap">
                                 <li class="item">
                                     <a href="http://sfcd.961digital.com/shipping-address.html"><span
                                             class="mt-dark_bg">Shipping Address</span></a>
@@ -176,26 +177,32 @@
             </div>
             <div class="row">
                 <form action=""
-                    class="checkout-form checkout-form__two checkout-form__three col-12 col-md-6 mt-small_padding">
+                    class="checkout-form checkout-form__two checkout-form__three col-12 mt-small_padding pt-0">
                     <div class="row">
 
 
-                        <div class="col-12 radio">
+                        <div class="col-12 col-md-8 radio">
                             <input type="radio" id="flat-rate" name="shipping-type" checked>
                             <label for="flat-rate">Flat rate</label>
                         </div>
-                        <div class="col-12 radio">
+                        <div class="col-12 col-md-8 radio">
                             <input type="radio" id="free-shipping" name="shipping-type">
                             <label for="free-shipping">Free shipping</label>
                         </div>
-                        <div class="col-12 radio">
+                        <div class="col-12 col-md-8 radio">
                             <input type="radio" id="local-pickup" name="shipping-type">
                             <label for="local-pickup">Local pickup</label>
-                        </div>
-                        <div class="col-4">
-                            <input type="submit" class="checkout-form__submit">
+                        </div><div class="col-12 col-md-8 ">
+                            <label for="sepical-instructions">Special Instructions (if any)</label>
+                            <textarea name="sepical-instructions" id="sepical-instructuins" style="height: 150px;">Instructions</textarea>
                         </div>
                     </div>
+                    <div class="row">
+                            
+                        <div class="col -12 col-md-2 " style="margin-top: 16px;">
+                            <input type="submit" class="checkout-form__submit">
+                        </div>
+                        </div>
                 </form>
             </div>
         </section>
@@ -203,7 +210,7 @@
 
     <!-- footer-section starts here -->
     <footer class="mt-footer mt-dark_bgr mt-small_padding">
-        <div class="container-lg">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <aside class="mt-footer_widget">
@@ -361,11 +368,11 @@
         </div>
     </footer>
     <!-- footer section ends here -->
-    <div class="container-lg copyright py-1">
-        <div class=" col-10 col-md-6 cpy-date">
+    <div class="container copyright py-1">
+        <div class=" col-8 col-md-6 cpy-date">
             © 2020 SAN FERNANDO CD
         </div>
-        <div class="col-2 col-md-6 d-flex justify-content-end cpy-atm">
+        <div class="col-4 col-md-6 d-flex justify-content-end cpy-atm">
             <a href="">
                 <img src="assets/img/thumb-atm.png" alt="Atm Card">
             </a>
