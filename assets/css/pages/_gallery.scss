@@ -1,0 +1,23 @@
+.mt-gallery{
+    display: grid;
+    &__img-wrapper{
+        display: inline-block;
+        float: left;
+        &:before, &::after{
+            clear: both;
+        }
+    }
+    .mt-vertical-rect{
+        height: 400px;
+        width: 200px;
+    }
+    .mt-horizontal-rect{
+        height: 200px;
+        width: 400px;
+
+    }
+    .mt-square{
+        height: 200px;
+        width: 200px;
+    }
+}

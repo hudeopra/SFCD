@@ -2589,6 +2589,15 @@ aside {
   width: 100%;
 }
 
+.mt-news-center {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .mt-section_title {
   font-size: 28px;
   font-weight: normal;
@@ -2657,6 +2666,13 @@ aside {
   .mt-card {
     padding-bottom: 30px;
   }
+  .mt-news-slider .mt-date {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .mt-news-slider .mt-date span {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -2708,7 +2724,7 @@ aside {
   width: 30px;
 }
 
-.mt-shop-banner:hover .mt-banner_thumb {
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb {
   ms-flex: 0 0 25%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
@@ -2716,9 +2732,9 @@ aside {
   max-width: 25%;
 }
 
-.mt-shop-banner:hover .mt-banner_thumb:hover,
-.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb,
-.mt-shop-banner:hover .mt-banner_thumb:last-child {
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:hover,
+.mt-shop-banner .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:last-child {
   ms-flex: 0 0 25%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
@@ -2726,21 +2742,21 @@ aside {
   max-width: 25%;
 }
 
-.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-thumb,
-.mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-thumb,
-.mt-shop-banner:hover .mt-banner_thumb:hover img.mt-thumb {
+.mt-shop-banner .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-thumb,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-thumb,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:hover img.mt-thumb {
   opacity: 1;
 }
 
-.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-full,
-.mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-full,
-.mt-shop-banner:hover .mt-banner_thumb:hover img.mt-full {
+.mt-shop-banner .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb img.mt-full,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:last-child img.mt-full,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:hover img.mt-full {
   opacity: 1;
 }
 
-.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
-.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
-.mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
+.mt-shop-banner .mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+.mt-shop-banner .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
   opacity: 1;
   top: 0;
   top: auto;
@@ -2748,33 +2764,33 @@ aside {
   bottom: -30px;
 }
 
-.mt-banner_section .mt-slider_caption {
+.mt-shop-banner .mt-banner_section .mt-slider_caption {
   top: auto;
   bottom: 0;
   left: 12%;
 }
 
-.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption {
+.mt-shop-banner .mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption {
   opacity: 1;
   width: auto;
 }
 
-.mt-shop-banner .mt-banner_thumb img.mt-thumb {
+.mt-shop-banner .mt-shop-banner .mt-banner_thumb img.mt-thumb {
   width: 175%;
 }
 
-.mt-banner_section .mt-banner_thumb img.mt-thumb {
+.mt-shop-banner .mt-banner_section .mt-banner_thumb img.mt-thumb {
   width: 161% !important;
 }
 
-.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
-.mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
-.mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
+.mt-shop-banner .mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+.mt-shop-banner .mt-shop-banner .mt-left_edge:hover + .mt-banner_thumb .mt-slider_caption,
+.mt-shop-banner .mt-shop-banner:hover .mt-banner_thumb:last-child .mt-slider_caption {
   display: none;
 }
 
-.mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
-.mt-shop-banner .hover-display:hover .mt-slider_caption {
+.mt-shop-banner .mt-shop-banner .mt-banner_thumb:hover .mt-slider_caption,
+.mt-shop-banner .mt-shop-banner .hover-display:hover .mt-slider_caption {
   display: inline !important;
   opacity: 1 !important;
   -webkit-transition: all 0.3s ease-in-out 0.3s;
@@ -4087,5 +4103,34 @@ form.checkout-form h2 {
 
 .mt-login-register a:hover {
   opacity: .5;
+}
+
+.mt-gallery {
+  display: -ms-grid;
+  display: grid;
+}
+
+.mt-gallery__img-wrapper {
+  display: inline-block;
+  float: left;
+}
+
+.mt-gallery__img-wrapper:before, .mt-gallery__img-wrapper::after {
+  clear: both;
+}
+
+.mt-gallery .mt-vertical-rect {
+  height: 400px;
+  width: 200px;
+}
+
+.mt-gallery .mt-horizontal-rect {
+  height: 200px;
+  width: 400px;
+}
+
+.mt-gallery .mt-square {
+  height: 200px;
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */

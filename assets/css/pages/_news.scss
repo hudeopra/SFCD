@@ -519,7 +519,12 @@ aside {
 .mt-thumb {
   width: 100%;
 }
-
+.mt-news-center{
+  
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .mt-section_title {
   font-size: 28px;
@@ -588,6 +593,13 @@ aside {
 @media only screen and (max-width: 767px) {
   .mt-card {
     padding-bottom: 30px;
+  }
+  .mt-news-slider .mt-date {
+    margin-top: 10px;
+    margin-bottom: 0;
+    span{
+      margin-top: 0;
+    }
   }
 }
 
