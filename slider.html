@@ -7,12 +7,97 @@
   <title>San Fernando Club Deportivo </title>
   <link rel="icon" type="image/png" href="assets/img/fav-icon.png" />
   <link rel="shortcut icon" type="image/png" href="assets/img/fav-icon.png" />
-  <link rel="stylesheet" href="/assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/library/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <header>
+    <div class="topHeader">
+      <div class="container-lg sideHeader ">
+        <div class="row">
+          <ul class="col-xl-6 col-lg-6 col-md-6 col-2 d-flex mt-contact">
+            <li>
+              <a class="email" href="mailto:sanfernandoclubdeportivo@live.com"><span>sanfernandoclubdeportivo@live.com</span></a>
+            </li>
+            <li>
+              <a class="number" href="tel:956884785"><span>956 884 785</span></a>
+            </li>
+          </ul>
+          <ul class="col-xl-6 col-lg-6 col-md-6 col-10 text-uppercase d-flex justify-content-end login-section ">
+            <li>
+              <a href="cart.html"> Cart</a>
+            </li>
+            <li>
+              <a href="login-register.html"> My Account</a>
+            </li>
+            <li class="mt-shop d-flex">
+              <a href="shop.html">
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="login-register.html"> Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mainHeader">
+      <div class="container-lg py-1">
+        <div class="row">
+          <div class="col-12 col-lg-3 col-md-12 d-flex align-items-center justify-content-between">
+            <div class="mt-logo-section">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="SFCD Logo">
+              </a>
+            </div>
+            <div class="mt-nav-section ">
+              <ul class="d-flex">
+                <li class="text-uppercase mt-shop">
+                  <a class="text-decoration-none" href="shop.html">Shop</a>
+                </li>
+                <li class="text-uppercase mt-bars">
+                  <a class="nav-toggle text-decoration-none">
+                    <span class="bar-top"></span>
+                    <span class="bar-mid"></span>
+                    <span class="bar-bot"></span>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 col-md-12  flex-column mt-menu-section">
+            <ul class="mt-add d-flex justify-content-end">
+              <li class="pr-1">
+                <img src="assets/img/sponsor-nike.png" alt="nike">
+              </li>
+              <li>
+                <img src="assets/img/sponsor-2.png" alt="addidas">
+              </li>
+            </ul>
+            <nav id="mainnav" class="group my-1">
+              <ul>
+                <li class="mt-active">
+                  <a href="index.html">Home</a></li>
+                <li><a href="club.html">Club</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="news.html">Media</a></li>
+                <li><a href="match.html">Matches</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="statistics.html">Statistics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="FAQ's.html">FAQs</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
  
   <!-- Banner Image Section -->
   <div class="mt-banner_section">
@@ -92,9 +177,9 @@
     .mt-banner_section:before {background:#1F3A93; left:-306px;}
     .mt-banner_section:after {background:#67CEEE; right:-300px; border-left:solid 5px #fff;}
     .mt-banner_section {display:flex;}
-    .mt-banner_section .mt-banner_thumb {ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; width:auto; transition:all 0.5s; border:none; margin-right:5px;}
-    .mt-banner_section:hover .mt-banner_thumb {ms-flex: 0 0 5%; flex: 0 0 5%; max-width: 5%;}
-    .mt-banner_section:hover .mt-banner_thumb:hover, .mt-banner_section .mt-left_edge:hover + .mt-banner_thumb,  .mt-banner_section:hover .mt-banner_thumb:last-child {ms-flex: 0 0 85%; flex: 0 0 85%; max-width: 85%;}
+    .mt-banner_section .mt-banner_thumb {-ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; width:auto; transition:all 0.5s; border:none; margin-right:5px;}
+    .mt-banner_section:hover .mt-banner_thumb {-ms-flex: 0 0 5%; flex: 0 0 5%; max-width: 5%;}
+    .mt-banner_section:hover .mt-banner_thumb:hover, .mt-banner_section .mt-left_edge:hover + .mt-banner_thumb,  .mt-banner_section:hover .mt-banner_thumb:last-child {-ms-flex: 0 0 85%; flex: 0 0 85%; max-width: 85%;}
     .mt-banner_section .mt-banner_thumb img {transition:all 0.5s;}
     .mt-banner_section .mt-banner_thumb img.mt-thumb {width:760px;}
     .mt-banner_section:hover .mt-banner_thumb img.mt-thumb {left:-150%;}
@@ -112,7 +197,7 @@
     }
     
     @media (max-width:639px) {
-        .mt-banner_section .mt-banner_thumb {ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; height:300px;}
+        .mt-banner_section .mt-banner_thumb {-ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; height:300px;}
         .mt-banner_section .mt-banner_thumb:nth-child(3), .mt-banner_section .mt-banner_thumb:nth-child(4) {display:none;}
         .mt-banner_section .mt-banner_thumb img {height:300px;}
         .mt-banner_section .mt-banner_thumb img.mt-thumb {width:500px;}
@@ -121,6 +206,166 @@
     
 </style>
 
+  <footer class="mt-footer mt-dark_bgr mt-medium_padding">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <aside class="mt-footer_widget">
+            <h4 clsss="mt-widget_title">Head Office Contact</h4>
+            <address>
+              Street María de los Dolores s / n,<br>
+              Estadio Iberoamericano 2010<br>
+              Centro Comercial Bahia Sur, San Fernando, 11100.<br>
+              Email: <a href="mailto:sanfernandoclubdeportivo@live.com">sanfernandoclubdeportivo@live.com</a>
+            </address>
+          </aside>
+          <aside class="mt-footer_widget">
+            <h4 clsss="mt-widget_title">Office Contact</h4>
+            <address>
+              Phone: 956 884 785<br>
+              Fax: 956 046 997<br>
+              Shop Phone: 856 176 305
+            </address>
+          </aside>
+          <aside class="mt-footer_widget mb-4">
+            <h4 clsss="mt-widget_title">Office Hours</h4>
+            <address>
+              Monday to Friday:<br>
+              9:00 a.m. to 2:00 p.m.<br>
+              Tuesday and Thursday: 5:00 p.m. to 7:00 p.m.<br>
+              Saturdays: 10:30 a.m. to 1:30 p.m.<br>
+              Shop Phone: 856 176 305
+            </address>
+          </aside>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <aside>
+            <h4 clsss="mt-widget_title">Information</h4>
+            <div class="mt-footer_widget mb-3">
+              <ul>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+                <li>
+                  <a href="">Purchase</a>
+                </li>
+                <li>
+                  <a href="">Conditions</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="">Shipping and Collections</a>
+                </li>
+                <li>
+                  <a href="">Shipping costs</a>
+                </li>
+                <li>
+                  <a href="">Get your Partner discount on Online Store</a>
+                </li>
+                <li>
+                  <a href="">Cookies policy</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <aside>
+            <h4 clsss="mt-widget_title">Product Categories</h4>
+            <div class="mt-footer_widget mb-4">
+              <ul>
+                <li>
+                  <a href="category.html">Kappa</a>
+                </li>
+                <li>
+                  <a href="category.html">Man / Boy</a>
+                </li>
+                <li>
+                  <a href="category.html">Woman</a>
+                </li>
+                <li>
+                  <a href="category.html">Tracksuits</a>
+                </li>
+                <li>
+                  <a href="category.html">Sweatshirts</a>
+                </li>
+                <li>
+                  <a href="category.html">Tshirts</a>
+                </li>
+                <li>
+                  <a href="category.html">Pants</a>
+                </li>
+                <li>
+                  <a href="category.html">Socks</a>
+                </li>
+                <li>
+                  <a href="category.html">Merchandising</a>
+                </li>
+                <li>
+                  <a href="category.html">Outlet</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <aside>
+            <h4 clsss="mt-widget_title">My Account</h4>
+          </aside>
+          <div class="mt-footer_widget mb-4">
+            <ul>
+              <li>
+                <a href="">Orders</a>
+              </li>
+              <li>
+                <a href="">Addresses</a>
+              </li>
+              <li>
+                <a href=""> Account details</a>
+              </li>
+            </ul>
+          </div>
+          <aside>
+            <h4 clsss="mt-widget_title">Follow us On</h4>
+          </aside>
+          <div class="mt-footer_widget">
+            <div class="d-flex mt-social-icons">
+              <li>
+                <a href="" class="px-1"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="" class="px-1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="" class="px-1"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="" class="px-1"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section ends here -->
+  <div class="container-lg copyright py-1">
+    <div class=" col-8 col-md-6 cpy-date">
+      © 2020 SAN FERNANDO CD
+    </div>
+    <div class="col-4 col-md-6 d-flex justify-content-end cpy-atm">
+      <a href="">
+        <img src="assets/img/thumb-atm.png" alt="Atm Card">
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/library/jquery-3.5.1.min.js"></script>
+  <script src="assets/library/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
